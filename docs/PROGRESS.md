@@ -9,12 +9,12 @@ conversation.
 
 | Page | State |
 |---|---|
-| `00 · Cover` | empty — still to do |
-| `01 · Branding` | logo exploration (3 marks) + three stylescapes 4000 × 1000 (Natural light · The plate is data · No verdicts) |
+| `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`) |
+| `01 · Branding` | logo exploration (3 marks) + four stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom recipe, type ramp, spacing, radius |
 | `03 · Components` | Logo, StatusBar, Nav, Button, Chip, Badge, RoundControl |
 | `04 · Screens & Prototype` | 10 screens, wired, start point on Welcome |
-| `05 · Flow map` | empty — still to do |
+| `05 · Flow map` | flow map 3700 × 2300 — lanes, labelled links, rules |
 
 ## Screens
 
@@ -100,16 +100,18 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
   on insight tiles — verified from rendered video frames.
 - **Eight edge cases** (E01–E08) on the Screens page, row at y = 1100, each its own
   prototype flow. Exports in `04-edge-cases/`.
+- **Stylescape 00 · Where it comes from** — the moodboard: the peel → the mark, light not
+  colour, the palette sampled with eyedroppers from a real plate, daylight photography.
+- **Cover** and **Flow map** pages built.
 - **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
 - **Secondary button fixed**: new token `action/secondary` (ink at 7 %) — binding a paint to
   a variable drops the paint's own opacity, so the alpha has to live in the variable.
 
 ## Still to do
 
-1. **Cover page** and **flow map** page
-2. Push to a public GitHub repository, verify from incognito
-3. Share the Figma file as "Anyone with the link · can view"; paste the Present link
-4. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
+1. Push to a public GitHub repository, verify from incognito
+2. Share the Figma file as "Anyone with the link · can view"; paste the Present link
+3. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
 
 ## Decisions worth defending on video
 

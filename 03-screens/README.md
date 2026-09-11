@@ -5,6 +5,7 @@ the start point is Welcome.
 
 | File | Screen | Kind | What it is for |
 |---|---|---|---|
+| `00-flow-map.png` | Flow map | — | Every screen, every link, the three kinds and their rules |
 | `01-welcome.png` | Welcome | entry | The promise, in one sentence, plus the mark |
 | `02-today.png` | Today | place | The day's budget, the week, the last meal, Zest's read |
 | `03-capture.png` | Capture | flow | Viewfinder — the plate inside the ring; Photo · Barcode · Type it |
