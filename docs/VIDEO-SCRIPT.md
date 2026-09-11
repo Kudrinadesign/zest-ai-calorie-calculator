@@ -21,6 +21,12 @@ explain the ideas, so each part ends on the decision behind it.
 > three marks; the fruit with an open ring won, because **the opening is the part of the
 > day that's left** — the logo shows state, not just identity.
 
+**Stylescape · Zest — the main one.**
+> This is the idea everything else starts from: a collage built on one thought — the
+> plate, the camera lens, the assistant's orb and the day's budget are all circles. Words
+> set on a circle around a plate, one number, the live Today screen, the icons, the voice,
+> a real plate sampled into the palette.
+
 **Stylescape 00 — Where it comes from.**
 > Four sources: the peel, out-of-focus light — after Milkinside's Natural OS — the colours
 > already on a plate, and daylight food photography. Here I sampled the palette straight
@@ -62,19 +68,24 @@ Components page.
 2. Shutter → **Analysing**.
    > A bead orbits the ring while it reads, and each item appears as it's found — you can
    > see the AI's work.
-3. Auto → **Result** → *Add to my day* → **Today**.
-   > First story: calories in a dish.
+3. Auto → **Result** → *Add to my day* → **Today** with *Added to breakfast · 516 kcal · Undo*.
+   > First story: calories in a dish. Every weight is marked as an estimate, every
+   > percentage is computed from the same targets as Today — protein 21 of 120 g is 18 %.
+   > Tap a line and you correct it; the meal lands on Today and Today says so.
 4. Camera → *Type it* → **Add a product** → stepper.
    > Second half of story one: a specific product.
 5. Today → *Dinners that fit* → **Recipes** → **Recipe detail** — *Why this fits you*.
-   > Story two: a recipe that suits me — ranked by what's left today, and it says why.
+   > Story two: a recipe that suits me — ranked by what's left today, and it says why —
+   > including the trade-off: this one takes fat 5 g past the target, so Zest says so and
+   > suggests halving the sesame oil. Planning dinner and logging it are separate actions.
 6. **Ask Zest**.
    > The assistant does the arithmetic, not the person.
 
 **Edge cases** (Present → the `Edge · …` flows, or scroll to the second row).
-> A happy path only shows what goes right. Eight screens for what doesn't: no plate in the
+> A happy path only shows what goes right. Nine screens for what doesn't: no plate in the
 > photo, two dishes that look alike — with how sure it is — a dark kitchen, no network,
-> an unknown barcode, a day over budget, the first empty day, and a corrected estimate.
+> an unknown barcode, a day over budget, the first empty day, a corrected estimate, and
+> the camera switched off.
 > Same rules everywhere: fact first, no verdicts, one way forward, nothing lost. My
 > favourite is the first day — the background is sampled from what you ate, so with
 > nothing eaten it's almost colourless.

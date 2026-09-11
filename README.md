@@ -83,9 +83,9 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 |---|---|---|
 | 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
-| 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 10 happy-path screens and 8 edge cases, ~60 prototype links, 9 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
+| 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 11 happy-path screens and 9 edge cases, ~80 prototype links, 10 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
-See [`links.md`](links.md) for the Figma link and the video walkthrough; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
+See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
 
 ### Screens
 
@@ -114,7 +114,7 @@ Today ──┬── week strip ───────▶ History
 ```
 
 The camera in the nav always opens Capture. Every burgundy button commits something and
-returns to Today, where it lands. Nothing on a screen duplicates a control that already
+returns to Today, where it lands — and Today says so ("Added to breakfast · 516 kcal · Undo"). Nothing on a screen duplicates a control that already
 lives in the navigation.
 
 ### Motion — only where the AI is working
@@ -139,9 +139,9 @@ the bead says it is waiting.
 
 ### Edge cases
 
-Eight screens for the moments a happy path never shows — no plate in the photo, two dishes
+Nine screens for the moments a happy path never shows — no plate in the photo, two dishes
 that look alike, a dark kitchen, no network, an unknown barcode, a day over budget, the
-first empty day, a corrected estimate. Each keeps the rules: fact first, no verdicts, one
+first empty day, a corrected estimate, the camera turned off. Each keeps the rules: fact first, no verdicts, one
 way forward, nothing lost. See [`04-edge-cases/`](04-edge-cases/).
 
 ### Design system
@@ -165,7 +165,7 @@ Three rules, and they are structural rather than stylistic:
 Rule 3 has a visible consequence: **there is no error red anywhere in the nutrition data.**
 Going over a target is stated as a fact in the brand's own clay tone.
 
-> "Breakfast used 41% of your fat budget — 33 g of 80 g.
+> "Breakfast is 41% of today's fat — 33 g of 80 g.
 > Lean protein at lunch keeps the rest of the day easy."
 
 ---

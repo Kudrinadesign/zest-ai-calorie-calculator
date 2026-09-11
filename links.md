@@ -18,5 +18,5 @@ edge case (`Edge · …`).
 - `01 · Branding` — logo exploration, the main stylescape and four supporting stylescapes
 - `02 · Foundations` — colour, the bloom, type, spacing
 - `03 · Components` — the component library
-- `04 · Screens & Prototype` — 10 screens + 8 edge cases, connected; 9 flows in Present mode
+- `04 · Screens & Prototype` — 11 screens + 9 edge cases, connected; 10 flows in Present mode
 - `05 · Flow map` — how the screens connect

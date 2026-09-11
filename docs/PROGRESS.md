@@ -18,7 +18,7 @@ conversation.
 
 ## Screens
 
-Ten screens remain. **Add (sheet), Saved and Profile were deleted on purpose — do not
+Eleven screens now (S11 · Today — meal added was added in round 4). **Add (sheet), Saved and Profile were deleted on purpose — do not
 bring them back.**
 
 S01 Welcome · S02 Today · S03 Capture · S04 Analysing · S05 Result · S06 Add a product ·
@@ -110,6 +110,12 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
 - **Secondary button fixed**: new token `action/secondary` (ink at 7 %) — binding a paint to
   a variable drops the paint's own opacity, so the alpha has to live in the variable.
+
+## Round 4 — review fixes (11 Sept)
+
+A reviewer scored the static screens 7.8 / 10. Every critical and high-severity point is
+fixed — see `docs/REVIEW-FIXES.md`. New: S11 · Today — meal added, E09 · Camera access is
+off, a main collage stylescape, motion on every edge case.
 
 ## Still to do
 

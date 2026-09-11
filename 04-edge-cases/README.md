@@ -1,6 +1,6 @@
 # Edge cases
 
-A happy path shows what the product does when everything goes right. These eight screens
+A happy path shows what the product does when everything goes right. These nine screens
 show what it does when it doesn't: the camera is pointed at the wrong thing, the model is
 unsure, the network drops, the day goes over plan.
 
@@ -20,8 +20,9 @@ Every case keeps the product's rules:
 | `E03-too-dark.png` | The kitchen is too dark to read the plate | The ring goes dashed, the pill names the problem, and the flash button lights up in the state colour — the fix is the thing that glows. |
 | `E04-no-connection.png` | The network drops while the photo is being read | The orbit stops, the photo is queued on the phone, and Zest promises a notification when it's read. Back to Today, nothing lost. |
 | `E05-barcode-not-in-the-list.png` | A barcode that isn't in the database | Explains, then turns it into a contribution: photograph the label once and the next scan works for everyone. |
-| `E06-past-the-budget.png` | The day goes 120 kcal over plan | Stated as a fact in the clay tone — "120 kcal past 2 400 · 5 %" — and Zest adds "Tomorrow starts fresh." No red, no "you failed". |
+| `E06-past-the-budget.png` | The day goes 120 kcal over plan | Stated as a fact in the clay tone — "120 kcal past 2,400 · 5%" — and Zest adds "Tomorrow starts fresh." No red, no "you failed". |
 | `E07-first-day.png` | The first day, nothing logged yet | The bloom is sampled from what you ate, so with nothing eaten it is almost colourless. Every tile says where the first plate will land. |
+| `E09-camera-access-off.png` | The camera permission is off | Says why the camera is needed and that photos stay on the phone; one button turns it on, a link lets you type instead. |
 | `E08-correcting-an-estimate.png` | The estimate is wrong and the person fixes it | A stepper corrects the avocado from 80 g to 120 g, the meal total updates, and Zest learns: "I'll start from 120 g next time." |
 
 In the prototype each case is its own flow (`Edge · …` in Present mode), and each one

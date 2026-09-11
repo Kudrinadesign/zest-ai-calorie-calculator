@@ -1,6 +1,6 @@
 # Key screens
 
-Exported from Figma at 390 × 844 (iPhone 14/15). All ten are connected in the prototype;
+Exported from Figma at 390 × 844 (iPhone 14/15). All eleven are connected in the prototype;
 the start point is Welcome.
 
 | File | Screen | Kind | What it is for |
@@ -16,6 +16,7 @@ the start point is Welcome.
 | `08-recipes.png` | Recipes | place | Ranked by what is still left today |
 | `09-recipe-detail.png` | Recipe detail | detail | Carries **Why this fits you** — the second user story |
 | `10-history.png` | History | place | Month calendar and what was eaten on the chosen day |
+| `11-today-meal-added.png` | Today — meal added | place | What happens after *Add to my day*: the meal lands, the budget is restated, **Undo** |
 
 ## How the screens connect
 
