@@ -27,12 +27,14 @@ worked?*
 
 ## Predicted issues, by severity
 
-| # | Issue | Severity | Suggested fix | Check in real sessions |
+Status after the walkthrough: **W1–W4 fixed** in the file (re-checked by clicking the published prototype); W5 and W6 stay prototype limitations.
+
+| # | Issue | Severity | Fix | Check in real sessions |
 |---|---|---|---|---|
-| W1 | Zest's nudge tile doesn't look tappable | Medium | Add "Add from photos ›" as a text button inside the tile | Task 1: do people tap the tile or go to the camera? |
-| W2 | Library thumbnail on Capture is unlabeled | Medium | A "Library" caption under the thumbnail | Task 1: how many press the shutter instead? |
-| W3 | Found lines have no edit affordance | Medium | A chevron on each line; keep the caption | Task 2: do people find the correction without prompting? |
-| W4 | A planned dinner leaves no trace on Today | Medium | The Dinners tile becomes "Tonight · Miso salmon · planned · ≈ 400 kcal" | Task 7: can people answer "is it counted?" a minute later? |
+| W1 | Zest's nudge tile doesn't look tappable | Medium | ✅ "Add from photos ›" inside the tile, shown only while breakfast is missing; the tile opens the camera then, and Ask Zest once breakfast is in (a conditional prototype link) | Task 1: do people tap the tile or go to the camera? |
+| W2 | Library thumbnail on Capture is unlabeled | Medium | ✅ "Library" caption under the thumbnail | Task 1: how many press the shutter instead? |
+| W3 | Found lines have no edit affordance | Medium | ✅ a chevron on each line; the caption stays | Task 2: do people find the correction without prompting? |
+| W4 | A planned dinner leaves no trace on Today | Medium | ✅ in the planned state the Dinners tile reads "Tonight · dinner planned, not logged yet" | Task 7: can people answer "is it counted?" a minute later? |
 | W5 | Snackbars cover content and don't auto-dismiss (prototype) | Low | Auto-dismiss after ~6 s in the build; in the prototype, a tap anywhere closes it | Task 3 |
 | W6 | Undo, then Plan, shows after-breakfast totals | Low | Prototype limitation — a real build computes the day | Tell participants if they hit it |
 
