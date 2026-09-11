@@ -1,6 +1,8 @@
 # Usability test plan — 3 to 5 sessions
 
-**Status: not run yet.** Nothing below is a result. The results section is an empty
+**Status: not run yet.** Nothing below is a result. An expert walkthrough of the same tasks
+(no participants) is in [`COGNITIVE-WALKTHROUGH.md`](COGNITIVE-WALKTHROUGH.md) — its predicted issues W1–W6
+are the things to watch for. The results section is an empty
 template to fill in after real sessions — do not fill it with guesses.
 
 ## What we want to learn
