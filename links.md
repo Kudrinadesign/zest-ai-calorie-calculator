@@ -13,4 +13,4 @@ All links must open from an incognito window. Verify before submitting.
 - `01 · Branding` — logo exploration and the stylescape
 - `02 · Foundations` — colour, the bloom, type, spacing
 - `03 · Components` — the component library
-- `04 · Screens & Prototype` — 13 screens, connected
+- `04 · Screens & Prototype` — 10 screens, connected

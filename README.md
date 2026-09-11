@@ -19,7 +19,7 @@ Both user stories from the brief are closed end to end:
 | Story | Where it happens |
 |---|---|
 | Calculate the calories in a **dish** | Capture → Analysing → Result |
-| Calculate the calories in a **specific product** | Add → Search a product → portion stepper |
+| Calculate the calories in a **specific product** | Capture → Barcode or Type it → Add a product → portion stepper |
 | Find a **recipe suitable for me** | Recipes (ranked by what is left today) → Recipe detail → *Why this fits you* |
 
 ---
@@ -47,15 +47,16 @@ from what the person actually ate.** The atmosphere is data, not decoration.
 | Role | Token | Value |
 |---|---|---|
 | Ground | `ground/porcelain` | `#EFE9E1` |
-| Bloom | `bloom/plum` → `bloom/mulberry` → `bloom/ember` → `bloom/amber` | `#3A1730` `#7E2347` `#E8632F` `#F5A85F` |
-| Sampled from food | `bloom/butter` | `#F0DDA4` |
-| **Action** | `action/primary` | `#6B1B33` burgundy |
-| State (selected, active, progress) | `accent/ember` | `#E8632F` |
-| Protein · Carbs · Fat | `macro/*` | `#5C63C4` `#D9A441` `#C9524A` |
+| Bloom | `bloom/plum` → `bloom/mulberry` → `bloom/ember` → `bloom/amber` | `#4A2238` `#8C3A56` `#E27A52` `#F2B585` |
+| Sampled from food | `bloom/butter` | `#FFCB2F` |
+| **Action** — committing button, nav camera | `action/primary` | `#9E2044` burgundy |
+| State (selected, progress, shutter) | `accent/ember` | `#D7650E` |
+| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#FBC357` `#CE4A34` |
+| Opaque surface (nav, inputs) · suggestion tiles | `surface/raised` · `glass/peach` | `#FFFFFF` · `#F4BFA5` 66 % |
 
 **The rule that keeps controls readable:** a control is never the colour of the
-atmosphere. The committing action is burgundy on every screen with no exceptions; the
-brand's ember is reserved for state and for the capture button alone; red appears only on
+atmosphere. The committing action is burgundy on every screen with no exceptions and the
+bloom never borrows it; ember is reserved for state and the shutter; red appears only on
 destructive actions. Each macro hue also has a `-ink` twin that is safe to set text in,
 because the graphic values are too light to carry type.
 
@@ -77,39 +78,46 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 |---|---|---|
 | 1 | Branding / stylescape | Figma page `01 · Branding` — logo exploration, chosen mark, 4000 × 2000 stylescape |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
-| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 13 screens, ~70 prototype links, start point on Welcome |
+| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 screens, ~40 prototype links, start point on Welcome |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough.
 
 ### Screens
 
+Every screen is one of three kinds, and each kind always behaves the same way:
+
+| Kind | Screens | Top-left | Bottom | Arrives by |
+|---|---|---|---|---|
+| **Place** | Today, Recipes, Zest, History | — | the nav | dissolve, 300 ms |
+| **Detail** | Recipe detail | `‹` one step back | one burgundy button | slides in from the right |
+| **Flow** | Capture → Analysing → Result, Capture → Add a product | `×` leaves without saving | one burgundy button | rises from the bottom |
+
 ```
-Welcome ──▶ Capture
-   └──────▶ Today
+Welcome ──▶ Capture                     (Scan my first meal)
+   └──────▶ Today                       (I already have an account)
 
-Today ──┬── capture ──▶ Add ──┬── Photograph ──▶ Capture ──▶ Analysing ──▶ Result ──▶ Today
-        │                     ├── Barcode ─────▶ Capture
-        │                     ├── Search ──────▶ Add a product ──▶ Today
-        │                     └── Ask Zest ────▶ Ask Zest
-        ├── week strip ──────▶ History  (month calendar, what was eaten each day)
-        ├── Last meal ───────▶ Result
-        ├── Zest tile ───────▶ Ask Zest
-        └── Dinners that fit ▶ Recipes ──▶ Recipe detail ──▶ Today
+Nav, on every place:  Today · Recipes · [ camera ] · Zest · History
+                                         └──▶ Capture
 
-Profile ──┬── Saved recipes ──▶ Saved ──▶ Recipe detail
-          ├── History
-          └── Settings
+Capture ──┬── shutter / library ──▶ Analysing ──(auto)──▶ Result ──▶ Today
+          ├── Barcode ────────────▶ Add a product ───────────────────▶ Today
+          └── Type it ────────────▶ Add a product
+
+Today ──┬── week strip ───────▶ History
+        ├── Zest tile ────────▶ Zest
+        └── Dinners that fit ─▶ Recipes ──▶ Recipe detail ──▶ Today
 ```
 
-Bottom navigation is the same everywhere: **Today · Recipes · Capture · Zest · Profile**.
-Nothing on a screen duplicates a control that already lives in the navigation.
+The camera in the nav always opens Capture. Every burgundy button commits something and
+returns to Today, where it lands. Nothing on a screen duplicates a control that already
+lives in the navigation.
 
 ### Design system
 
-- ~50 Figma variables (colour, spacing, radius) — no hardcoded values in any screen
+- ~53 Figma variables (colour, spacing, radius) — no hardcoded values in any screen
 - 11 text styles
-- Components: `Logo` (3 lockups), `StatusBar` (2 tones), `Nav` (4 active states),
-  `Button` (3 kinds × 2 sizes), `Chip`, `Badge`, `RoundControl`
+- Components: `Logo` (3 lockups), `StatusBar` (2 tones), `Nav` (4 active states, labelled),
+  `Button` (3 kinds × L 46 / M 38), `Chip`, `Badge`, `RoundControl` (back, close, edit, flash)
 
 ---
 

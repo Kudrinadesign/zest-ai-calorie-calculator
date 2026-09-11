@@ -1,42 +1,52 @@
 # Key screens
 
-Exported from Figma at 390 × 844 (iPhone 14/15). All thirteen are connected in the
-prototype; the start point is Welcome.
+Exported from Figma at 390 × 844 (iPhone 14/15). All ten are connected in the prototype;
+the start point is Welcome.
 
-| File | Screen | What it is for |
-|---|---|---|
-| `01-welcome.png` | Welcome | The promise, in one sentence, plus the mark |
-| `02-add.png` | Add | The fork: photo, barcode, manual search, or ask Zest |
-| `03-today.png` | Today | The day's budget, the week strip, the last meal, Zest's read |
-| `04-capture.png` | Capture | Viewfinder — the plate held inside the light |
-| `05-analysing.png` | Analysing | Items surface one by one, so the AI's work is legible |
-| `06-result.png` | Result | Total, macros, Zest's observation, every portion editable |
-| `07-ask-zest.png` | Ask Zest | The assistant does the arithmetic, not the person |
-| `08-add-a-product.png` | Add a product | Search or barcode, with a portion stepper |
-| `09-recipes.png` | Recipes | Ranked by what is still left today |
-| `10-recipe-detail.png` | Recipe detail | Carries **Why this fits you** — the second user story |
-| `11-saved.png` | Saved | Kept recipes, honest about the ones that no longer fit |
-| `12-history.png` | History | Month calendar and what was eaten on the chosen day |
-| `13-profile.png` | Profile | Goals, saved, history, settings |
+| File | Screen | Kind | What it is for |
+|---|---|---|---|
+| `01-welcome.png` | Welcome | entry | The promise, in one sentence, plus the mark |
+| `02-today.png` | Today | place | The day's budget, the week, the last meal, Zest's read |
+| `03-capture.png` | Capture | flow | Viewfinder — the plate inside the ring; Photo · Barcode · Type it |
+| `04-analysing.png` | Analysing | flow | Items surface one by one, so the AI's work is legible |
+| `05-result.png` | Result | flow | Total, macros, Zest's observation, every portion editable |
+| `06-add-a-product.png` | Add a product | flow | Search or barcode, with a portion stepper |
+| `07-ask-zest.png` | Ask Zest | place | The assistant does the arithmetic, not the person |
+| `08-recipes.png` | Recipes | place | Ranked by what is still left today |
+| `09-recipe-detail.png` | Recipe detail | detail | Carries **Why this fits you** — the second user story |
+| `10-history.png` | History | place | Month calendar and what was eaten on the chosen day |
 
-## Flow
+## How the screens connect
+
+Three kinds of screen, and each kind always behaves the same way.
+
+| Kind | Screens | Top-left | Bottom | Arrives by |
+|---|---|---|---|---|
+| **Place** | Today, Recipes, Zest, History | — | the nav | dissolve, 300 ms |
+| **Detail** | Recipe detail | `‹` one step back | one burgundy button | slides in from the right |
+| **Flow** | Capture → Analysing → Result, Capture → Add a product | `×` leaves without saving | one burgundy button | rises from the bottom |
 
 ```
-Welcome ──▶ Capture
-   └──────▶ Today
+Welcome ──▶ Capture                     (Scan my first meal)
+   └──────▶ Today                       (I already have an account)
 
-Today ──┬── capture ──▶ Add ──┬── Photograph ──▶ Capture ──▶ Analysing ──▶ Result ──▶ Today
-        │                     ├── Barcode ─────▶ Capture
-        │                     ├── Search ──────▶ Add a product ──▶ Today
-        │                     └── Ask Zest ────▶ Ask Zest
-        ├── week strip ──────▶ History
-        ├── Last meal ───────▶ Result
-        ├── Zest tile ───────▶ Ask Zest
-        └── Dinners that fit ▶ Recipes ──▶ Recipe detail ──▶ Today
+Nav, on every place:  Today · Recipes · [ camera ] · Zest · History
+                                         └──▶ Capture
 
-Profile ──┬── Saved ──▶ Recipe detail
-          ├── History
-          └── Settings
+Capture ──┬── shutter / library ──▶ Analysing ──(auto)──▶ Result ──▶ Today
+          ├── Barcode ────────────▶ Add a product ───────────────────▶ Today
+          └── Type it ────────────▶ Add a product
+
+Today ──┬── week strip ───────▶ History
+        ├── Zest tile ────────▶ Zest
+        └── Dinners that fit ─▶ Recipes ──▶ Recipe detail ──▶ Today
+
+Zest ──┬── Swap for something lighter ──▶ Recipes
+       └── Add it to my day ────────────▶ Today
 ```
 
-Bottom navigation, identical everywhere: **Today · Recipes · Capture · Zest · Profile**.
+Three rules hold everywhere:
+
+1. `‹` goes one step back. `×` closes a flow without saving.
+2. The camera in the nav always opens Capture, from every place.
+3. Every burgundy button commits something and returns to Today, where it lands.
