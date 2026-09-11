@@ -10,7 +10,7 @@ conversation.
 | Page | State |
 |---|---|
 | `00 · Cover` | empty — still to do |
-| `01 · Branding` | logo exploration (3 marks) + stylescape 4000 × 2000 |
+| `01 · Branding` | logo exploration (3 marks) + three stylescapes 4000 × 1000 (Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom recipe, type ramp, spacing, radius |
 | `03 · Components` | Logo, StatusBar, Nav, Button, Chip, Badge, RoundControl |
 | `04 · Screens & Prototype` | 10 screens, wired, start point on Welcome |

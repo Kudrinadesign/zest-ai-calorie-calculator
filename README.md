@@ -76,7 +76,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 
 | # | Deliverable | Where |
 |---|---|---|
-| 1 | Branding / stylescape | Figma page `01 · Branding` — logo exploration, chosen mark, 4000 × 2000 stylescape |
+| 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration and three 4000 × 1000 stylescapes: **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
 | 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 screens, ~40 prototype links, start point on Welcome |
 
