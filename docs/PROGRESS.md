@@ -100,7 +100,7 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
   on insight tiles — verified from rendered video frames.
 - **Eight edge cases** (E01–E08) on the Screens page, row at y = 1100, each its own
   prototype flow. Exports in `04-edge-cases/`.
-- **Stylescape 00 · Where it comes from** — the moodboard: the peel → the mark, light not
+- **Stylescape 00 · Where it comes from** — the moodboard: the peel → the mark and a drawn citrus cross-section, light not
   colour, the palette sampled with eyedroppers from a real plate, daylight photography.
 - **Cover** and **Flow map** pages built.
 - **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
@@ -111,7 +111,8 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 
 1. Push to a public GitHub repository, verify from incognito
 2. Share the Figma file as "Anyone with the link · can view"; paste the Present link
-3. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
+3. Rename the Figma file from "Untitled" (the Plugin API cannot set the document name)
+4. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
 
 ## Decisions worth defending on video
 
