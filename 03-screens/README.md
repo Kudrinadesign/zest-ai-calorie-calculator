@@ -1,6 +1,6 @@
 # Key screens
 
-Exported from Figma at 390 × 844 (iPhone 14/15). All twelve are connected in the prototype;
+Exported from Figma at 390 × 844 (iPhone 14/15). States 09b, 11 and 12 are the same frames in other variable modes (no extra screens). All are connected in the prototype;
 the start point is Welcome.
 
 | File | Screen | Kind | What it is for |
@@ -16,6 +16,7 @@ the start point is Welcome.
 | `08-recipes.png` | Recipes | place | Ranked by what is still left today |
 | `09-recipe-detail.png` | Recipe detail | detail | Carries **Why this fits you** — the second user story |
 | `10-history.png` | History | place | Month calendar and what was eaten on the chosen day |
+| `09b-recipe-detail-adjusted.png` | Recipe detail — adjusted | detail | After *Apply adjustment*: ≈ 400 kcal, 30 g protein, 9 g fat, 2 × 100 g salmon — the same frame in its *Adjusted* mode |
 | `11-today-meal-added.png` | Today — meal added | place | After *Add to my day*: the budget moves from 1,056 to 540 kcal left, and a snackbar says so — **Undo** |
 | `12-today-dinner-planned.png` | Today — dinner planned | place | After *Plan for dinner*: planned is not logged — "It logs when you mark it eaten" |
 

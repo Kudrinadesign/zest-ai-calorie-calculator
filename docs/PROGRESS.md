@@ -123,6 +123,13 @@ Today before/after made one coherent afternoon (1,056 → 540), E06 protein word
 salmon adjustment, enabled-looking Secondary, no compensating breakfasts, a + on over-budget
 days, Today — dinner planned. S09b (adjusted recipe) was removed by Sofia on purpose.
 
+## Round 6 — prototype state, contrast, case (11 Sept)
+
+Today and Recipe detail recalculate through variable modes (no extra frames — S11/S12 kept
+disappearing, most likely through Figma undo). Main flow clicked through in the published
+prototype. Contrast fixed and measured on real pixels. The case on the Cover page. Usability
+test plan written; tests not run.
+
 ## Still to do
 
 Figma file shared as "Anyone with the link · can view" and renamed to `project`; file and
@@ -130,7 +137,8 @@ prototype links in `links.md`, both checked from a browser with no Figma login.
 
 
 1. Push to a public GitHub repository, verify from incognito
-2. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
+2. Run 3–5 usability sessions with `docs/USABILITY-TEST-PLAN.md` and fill in the results
+3. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
 
 ## Decisions worth defending on video
 

@@ -28,6 +28,19 @@ Both user stories from the brief are closed end to end:
 
 ---
 
+## The case
+
+![The case](case.png)
+
+| | |
+|---|---|
+| **Problem** | Counting calories by hand — search, weigh, type — is slow enough that people stop, and when a day goes over plan, red numbers and "you failed" make them stop faster. |
+| **Hypothesis** | If logging a meal is one photo and one confirmation, and the app states facts without verdicts, people will log more of their meals and keep logging through days that go over plan. If recipes are ranked by what is left today and say why they fit, people will choose one instead of guessing. |
+| **Role of AI** | It does the tedious part — names what is on the plate, estimates each portion, does the arithmetic against today's targets, suggests what fits next. The person stays in control: every estimate is "≈" and editable, nothing is logged without a tap, and when it is unsure it says how sure it is. |
+| **Success metric** | North star: share of a person's meals logged per active day, at week 4. Supporting: time from camera to confirmed log; corrections per meal (should fall as Zest learns portions); days still logged after an over-budget day; recipe plans per week. These are what the product would be measured on — **not results**; nothing has been tested with users yet. See [`docs/USABILITY-TEST-PLAN.md`](docs/USABILITY-TEST-PLAN.md). |
+
+---
+
 ## The name
 
 The zest is the thin outer layer of a citrus — the part that holds all the flavour. That
@@ -85,7 +98,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
 | 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 12 happy-path screens and 9 edge cases, ~80 prototype links, 10 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
-See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
+See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review, [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md) for the contrast check; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
 
 ### Screens
 
@@ -116,6 +129,27 @@ Today ──┬── week strip ───────▶ History
 The camera in the nav always opens Capture. Every burgundy button commits something and
 returns to Today, where it lands — and Today says so ("Added to breakfast · 516 kcal · Undo"). Nothing on a screen duplicates a control that already
 lives in the navigation.
+
+### The clickable scenario
+
+Present → **Main · log breakfast → plan dinner** (starts on Today). Every step below was
+clicked through in the published prototype, logged out:
+
+1. **Today** — 1,056 kcal left; Zest: *"Breakfast isn't logged yet."* Tap the tile.
+2. **Capture** → pick the breakfast photo from the library → **Analysing** → **Result**
+   (Breakfast · 09:12, 516 kcal).
+3. **Add to my day** → **Today recalculates**: 540 left, protein 96 / 120, carbs 210 / 260,
+   fat 71 / 80, bars and Zest's line update, *"Added to breakfast · 516 kcal · Undo"*.
+   **Undo** puts the day back to 1,056.
+4. **Dinners that fit** → **Recipes** → **Miso salmon** → **Apply adjustment**: the recipe
+   recalculates in place — 480 → ≈ 400 kcal, protein 38 → 30 g, fat 14 → 9 g, salmon
+   2 × 140 → 2 × 100 g. *Back to 140 g* reverses it.
+5. **Plan for dinner** → Today: *"Dinner planned · It logs when you mark it eaten."*
+
+The recalculation is real prototype state, not extra screens: Today and Recipe detail are
+bound to two variable collections (`Prototype · Day` — before / added / after / planned;
+`Prototype · Recipe` — original / adjusted) and the buttons switch their modes. Static
+exports of each state are in [`03-screens/`](03-screens/).
 
 ### Motion — only where the AI is working
 

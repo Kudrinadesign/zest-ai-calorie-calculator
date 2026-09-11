@@ -60,3 +60,16 @@ The reviewer confirmed the fixes above and listed what was still open. All of it
 | "Light mornings" after a day over budget read as compensation | The tile is **Breakfast ideas · Your 3 favourites** — nothing to make up. |
 | History relied on colour for over-budget days | Over-budget dates carry a **+**; the legend says "A + marks a day that went over". |
 | Planning vs logging after the button | *Plan for dinner* (Recipe detail, Ask Zest) lands on **Today — dinner planned**: *"It logs when you mark it eaten"*. |
+
+---
+
+# Third round — making it work, not just look right
+
+| Asked for | Done |
+|---|---|
+| *Apply adjustment* with automatic recalculation | Recipe detail is bound to a `Prototype · Recipe` variable collection. *Apply adjustment · −5 g fat* switches it to *Adjusted*: kcal, the three reasons, protein, fat, both bars and the salmon amount change in place; *Back to 140 g* switches back. |
+| Updated Today after *Add to my day*, with Undo | Today is bound to `Prototype · Day` (before / breakfast added / after / dinner planned). *Add to my day* switches the mode and navigates; the budget, macros, bars, protein-to-go and Zest's line recalculate and the snackbar appears. *Undo* restores the before state. |
+| A clickable main scenario | New flow **Main · log breakfast → plan dinner**. Every link was checked two ways: a graph walk over all prototype reactions (no broken links; all ten screens reachable from Welcome) and a real click-through of the published prototype in a logged-out browser. |
+| Sticky buttons and contrast | See [`ACCESSIBILITY.md`](ACCESSIBILITY.md): three token fixes, three text-on-bloom fixes measured on real pixels, 44 px round controls. |
+| Problem, hypothesis, role of AI, success metric | README *The case* and a **The case** frame on the Cover page. |
+| 3–5 real usability tests | Not possible from here — I can't recruit or observe people, and I won't invent results. [`USABILITY-TEST-PLAN.md`](USABILITY-TEST-PLAN.md) has the script, seven tasks with success criteria, what to note and an empty results table. |
