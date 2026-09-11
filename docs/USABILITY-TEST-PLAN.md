@@ -24,6 +24,8 @@ remote or in person, on a phone if possible.
 
 ## Setup
 
+- **Session page:** [Zest Usability Sessions](https://claude.ai/code/artifact/38476900-dbc8-4659-848d-10bf542f2a15) — the seven tasks in order with a timer, outcome, SEQ 1–7 and notes per task, saved per participant (P1–P5) to a shared record; a live summary and a CSV export. Private to Sofia unless shared. After the sessions, Claude reads the record back and writes the findings from it.
+
 - Prototype: the **Main · log breakfast → plan dinner** flow — [link in `links.md`](../links.md)
   (starting point `S02 · Today`). On a phone, open it in the Figma app or the browser and
   add it to the home screen for full screen.
