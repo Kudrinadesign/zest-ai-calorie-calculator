@@ -13,16 +13,73 @@ conversation.
 | `01 · Branding` | logo exploration (3 marks) + stylescape 4000 × 2000 |
 | `02 · Foundations` | colour, bloom recipe, type ramp, spacing, radius |
 | `03 · Components` | Logo, StatusBar, Nav, Button, Chip, Badge, RoundControl |
-| `04 · Screens & Prototype` | 13 screens, wired, start point on Welcome |
+| `04 · Screens & Prototype` | 10 screens (see below), rewiring in progress |
 | `05 · Flow map` | empty — still to do |
 
-## Screens built
+## Screens
 
-S01 Welcome · S02 Add · S03 Today · S04 Capture · S05 Analysing · S06 Result ·
-S07 Ask Zest · S08 Add a product · S09 Recipes · S10 Recipe detail · S11 History ·
-S12 Saved · S13 Profile
+Ten screens remain. **Add (sheet), Saved and Profile were deleted on purpose — do not
+bring them back.**
 
-## Still to do
+S01 Welcome · S03 Today · S04 Capture · S05 Analysing · S06 Result · S07 Ask Zest ·
+S08 Add a product · S09 Recipes · S10 Recipe detail · S11 History
+
+## Round 2 — softer colour, button logic, screen logic (11 Sept)
+
+### Done
+
+- **Palette softened** through the variables (bloom, ink, macro, accent, action), then the
+  hardcoded gradient stops of the old palette were remapped on the screens and components.
+- **Nav rebuilt**: four places with labels + one verb in the middle.
+  `Today · Recipes · [camera] · Zest · History`. The active place sits on a soft peach
+  pill. The Profile variant became `Active=History` (Profile screen no longer exists).
+- **Capture (S04) redesigned**: title "Log a meal", thin white ring instead of the orange
+  beam, "Plate in view · hold still" detection pill, white-ring shutter (no longer looks
+  like the Zest orb), modes `Photo · Barcode · Type it`, duplicate search button removed,
+  dark scrim behind the dock, close/flash are now `RoundControl` instances.
+- **Zest insight tiles** (Today, Result, Recipe detail) moved off the loud orange gradient
+  to a peach wash with ink text.
+
+### Sofia's manual edits in Figma — these are the intended values
+
+- `#9E2044` — every primary CTA, the Ask Zest send button, the camera button in the nav
+- `#D7650E` — state: selected day, shutter disc, analysing progress and checks
+- `#4550D7` / `#FBC357` / `#CE4A34` — protein / carbs / fat bars
+- `#FFCB2F` — butter/leaf bloom ellipses (also at 60 %)
+- `#F4BFA5` at 66 % — Recipes tile on Today, Zest's reply bubble
+- Today's Zest tile: gradient `#8E4157 → #FCEDDE`
+- Nav Zest orb gradient `#E9A452 → #FF4901`; Welcome logo recoloured (olive leaf `#A2AA0C`)
+- **Primary button height 46** (was 60), label Manrope Medium 13
+- White search field on Add a product; name on Today is "Dmytro"
+
+### Next
+
+1. Push Sofia's values into the design system: variables, a new peach glass token,
+   `Button` (L = 46), `Nav` (camera = action colour, new orb), `Logo`; bind every
+   hardcoded colour on the screens back to a variable.
+2. Replace the hand-made CTA frames with `Button` instances and restore the right label
+   per screen (Welcome "Scan my first meal", Add a product "Add 180 g · 175 kcal",
+   Recipe detail "Cook this · logs 480 kcal").
+3. Screen logic: Ask Zest becomes a tab (nav, no back); History becomes a tab (no back);
+   Result top-left becomes × (it closes the capture flow); remove the camera control on
+   Add a product (the barcode in the field already does it); bookmark on Recipe detail
+   toggles, it does not navigate.
+4. Rewire every prototype link with one transition system (see below).
+5. Polish pass, re-export PNGs to `03-screens/`, update the READMEs.
+
+### Navigation model
+
+| Kind | Screens | Top-left | Bottom | Transition in |
+|---|---|---|---|---|
+| Place (tab) | Today, Recipes, Zest, History | — | Nav | Dissolve 300 ms, ease-out |
+| Detail | Recipe detail | ‹ back | one CTA | Slide in from right, gentle spring |
+| Capture flow | Capture → Analysing → Result, Capture → Add a product | × leaves the flow | one CTA | Move in from bottom |
+
+- `×` always returns to Today without saving. `‹` always goes one step back.
+- The camera in the nav always opens Capture, from every tab.
+- Every committing button returns to Today, where the meal lands.
+
+## Still to do (from round 1)
 
 1. **Edge cases** — explicitly requested, deliberately left until the happy path was
    complete. Candidates worth designing rather than listing:
@@ -35,15 +92,13 @@ S12 Saved · S13 Profile
    - the first day, with nothing logged yet (empty state)
    - a day skipped entirely, then reopened a week later
 2. **Cover page** and **flow map** page
-3. Export screens to `03-screens/` as PNGs
-4. Push to a public GitHub repository, verify from incognito
-5. Video walkthrough covering all three deliverables
+3. Push to a public GitHub repository, verify from incognito
+4. Video walkthrough covering all three deliverables
 
 ## Decisions worth defending on video
 
 - **The bloom is data.** On Today its hues are sampled from the day's meals.
-- **Controls are never the colour of the atmosphere.** Burgundy action, no exceptions;
-  ember reserved for state and the capture button.
+- **Controls are never the colour of the atmosphere.** Burgundy action, no exceptions.
 - **No error red in nutrition data.** A copy rule expressed as a colour decision.
 - **The logo shows state.** The arc in the mark is the remaining budget.
 - **Every macro hue has a text-safe twin**, because the graphic values fail contrast.
@@ -55,6 +110,8 @@ S12 Saved · S13 Profile
 - `node.screenshot()` inside `use_figma` can return a **stale render**. When something
   looks wrong, verify with the separate `get_screenshot` tool before chasing a bug that
   is not there.
+- A paint bound to a variable must also carry the variable's resolved colour as its
+  literal `color`, or it renders as the literal (black) until the file refreshes.
 - `resize()` resets auto-layout sizing to `FIXED`. Set `layoutSizingVertical = "HUG"`
   *after* resizing, or cards collapse to the resize height.
 - Setting `vectorPaths` normalises the path bounding box to `0,0`; position the vector
@@ -63,4 +120,5 @@ S12 Saved · S13 Profile
   `[name*=Word]`.
 - Prototype `NAVIGATE` destinations must be top-level frames **on the same page**, and a
   frame cannot navigate to itself.
+- Overlay settings (`overlayPositionType`, background) are read-only in the Plugin API.
 - Arc commands (`A`) are not supported in `vectorPaths`; use cubic curves.
