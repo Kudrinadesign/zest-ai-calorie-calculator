@@ -1,12 +1,16 @@
 # Links
 
-All links must open from an incognito window. Verify before submitting.
+All links open without a Figma account — checked on 11 September 2026 from a fresh
+browser with no Figma login.
 
 | What | Link | Access |
 |---|---|---|
-| Figma — branding, design system, screens, prototype | https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/ | ⚠️ set to "Anyone with the link · can view" |
-| Prototype — start on Welcome | (paste the Present link) | ⚠️ to add |
+| Figma — branding, design system, screens | [figma.com/design/mak5NZxh6OuT55iBLTpGD1](https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63) | ✅ Anyone with the link · can view |
+| Prototype — starts on Welcome | [figma.com/proto/mak5NZxh6OuT55iBLTpGD1](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&show-proto-sidebar=1&page-id=27%3A5) | ✅ Anyone with the link · can view |
 | Video walkthrough | (Loom / Google Drive) | ⚠️ to add |
+
+In the prototype the flows list on the left holds **Zest · full journey** and one flow per
+edge case (`Edge · …`).
 
 ## Figma pages
 

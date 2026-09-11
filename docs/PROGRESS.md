@@ -109,10 +109,12 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 
 ## Still to do
 
+Figma file shared as "Anyone with the link · can view" and renamed to `project`; file and
+prototype links in `links.md`, both checked from a browser with no Figma login.
+
+
 1. Push to a public GitHub repository, verify from incognito
-2. Share the Figma file as "Anyone with the link · can view"; paste the Present link
-3. Rename the Figma file from "Untitled" (the Plugin API cannot set the document name)
-4. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
+2. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
 
 ## Decisions worth defending on video
 
