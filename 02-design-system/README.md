@@ -9,7 +9,7 @@ switched once mid-project and the screens followed automatically.
 
 ## Foundations
 
-- ~53 variables across `ground/*`, `surface/*`, `bloom/*`, `glass/*`, `ink/*`,
+- ~54 variables across `ground/*`, `surface/*`, `bloom/*`, `glass/*`, `ink/*`,
   `onbloom/*`, `accent/*`, `action/*`, `macro/*`, `track/*`, `space/*`, `radius/*`
 - 11 text styles, all Manrope: `Head/XL·L·M`, `Text/Title·Body·S·Label·Caption`,
   `Metric/XL·L·S`
@@ -18,7 +18,8 @@ switched once mid-project and the screens followed automatically.
 |---|---|---|
 | Committing action, nav camera | `action/primary` | `#9E2044` |
 | State — selected, progress, shutter | `accent/ember` | `#D7650E` |
-| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#FBC357` `#CE4A34` |
+| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#E6BC6A` `#CE4A34` |
+| Secondary button | `action/secondary` | ink at 7 % |
 | Opaque surface — nav, input fields | `surface/raised` | `#FFFFFF` |
 | Suggestion tiles — recipe teaser, Zest's reply | `glass/peach` | `#F4BFA5` at 66 % |
 
@@ -31,7 +32,9 @@ switched once mid-project and the screens followed automatically.
 ## The rules worth knowing
 
 **One burgundy button per screen.** Primary sits at the bottom, full width, and commits
-something; pressing it returns to Today. Screens that have one hide the nav.
+something; pressing it returns to Today (a sheet's primary returns to the screen beneath).
+Screens that have one hide the nav. Secondary is ink at 7 % so it reads on paper and on
+the bloom alike — the earlier white glass disappeared on white sheets.
 
 **Four places and one verb.** The nav holds Today · Recipes · Zest · History, each with a
 label; the active one sits on a soft peach pill. The camera in the middle is the verb and
@@ -46,3 +49,7 @@ actions.
 
 **Every macro hue has a text-safe twin.** `macro/protein` is for bars and
 `macro/protein-ink` is for the number beside it.
+
+**Motion means the AI is working.** Nothing else animates: the lens breathes while it
+looks, a bead orbits while it reads, the orb breathes while it thinks. When the AI is
+stuck (no connection), the motion stops.

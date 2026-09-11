@@ -91,21 +91,25 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - The camera in the nav always opens Capture, from every tab.
 - Every committing button returns to Today, where the meal lands.
 
-## Still to do (from round 1)
+## Round 3 — stylescapes, AI motion, edge cases (11 Sept)
 
-1. **Edge cases** — explicitly requested, deliberately left until the happy path was
-   complete. Candidates worth designing rather than listing:
-   - the photo contains no food, or the model is unsure which of two dishes it is
-   - a plate is photographed in the dark, or half out of frame
-   - the estimate is wrong and the person corrects it — what the correction teaches
-   - going over the day's budget, said without a verdict (rule 03)
-   - no connection while the photo is being analysed
-   - a barcode that is not in the database
-   - the first day, with nothing logged yet (empty state)
-   - a day skipped entirely, then reopened a week later
-2. **Cover page** and **flow map** page
-3. Push to a public GitHub repository, verify from incognito
-4. Video walkthrough covering all three deliverables
+- **Three stylescapes** 4000 × 1000 in the reference format, built from live screens,
+  components and tokens: Natural light · The plate is data · No verdicts. The outdated v1
+  stylescape was removed from Figma.
+- **AI motion** (Figma Motion keyframes) on Capture, Analysing, Ask Zest and the Zest orb
+  on insight tiles — verified from rendered video frames.
+- **Eight edge cases** (E01–E08) on the Screens page, row at y = 1100, each its own
+  prototype flow. Exports in `04-edge-cases/`.
+- **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
+- **Secondary button fixed**: new token `action/secondary` (ink at 7 %) — binding a paint to
+  a variable drops the paint's own opacity, so the alpha has to live in the variable.
+
+## Still to do
+
+1. **Cover page** and **flow map** page
+2. Push to a public GitHub repository, verify from incognito
+3. Share the Figma file as "Anyone with the link · can view"; paste the Present link
+4. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
 
 ## Decisions worth defending on video
 
@@ -133,4 +137,8 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - Prototype `NAVIGATE` destinations must be top-level frames **on the same page**, and a
   frame cannot navigate to itself.
 - Overlay settings (`overlayPositionType`, background) are read-only in the Plugin API.
+- Binding a paint to a variable resets the paint's `opacity` to 1 — put the alpha in the
+  variable's value instead.
+- Motion: `get_screenshot` shows only the resting state; verify with `export_video` and
+  `ffmpeg` frame extraction.
 - Arc commands (`A`) are not supported in `vectorPaths`; use cubic curves.

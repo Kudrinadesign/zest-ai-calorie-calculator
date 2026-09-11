@@ -48,11 +48,12 @@ from what the person actually ate.** The atmosphere is data, not decoration.
 |---|---|---|
 | Ground | `ground/porcelain` | `#EFE9E1` |
 | Bloom | `bloom/plum` → `bloom/mulberry` → `bloom/ember` → `bloom/amber` | `#4A2238` `#8C3A56` `#E27A52` `#F2B585` |
-| Sampled from food | `bloom/butter` | `#FFCB2F` |
+| Sampled from food | `bloom/butter` | `#EDD28E` |
 | **Action** — committing button, nav camera | `action/primary` | `#9E2044` burgundy |
 | State (selected, progress, shutter) | `accent/ember` | `#D7650E` |
-| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#FBC357` `#CE4A34` |
+| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#E6BC6A` `#CE4A34` |
 | Opaque surface (nav, inputs) · suggestion tiles | `surface/raised` · `glass/peach` | `#FFFFFF` · `#F4BFA5` 66 % |
+| Secondary button | `action/secondary` | ink at 7 % |
 
 **The rule that keeps controls readable:** a control is never the colour of the
 atmosphere. The committing action is burgundy on every screen with no exceptions and the
@@ -78,7 +79,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 |---|---|---|
 | 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration and three 4000 × 1000 stylescapes: **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
-| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 screens, ~40 prototype links, start point on Welcome |
+| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 happy-path screens and 8 edge cases, ~60 prototype links, 9 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough.
 
@@ -112,9 +113,31 @@ The camera in the nav always opens Capture. Every burgundy button commits someth
 returns to Today, where it lands. Nothing on a screen duplicates a control that already
 lives in the navigation.
 
+### Motion — only where the AI is working
+
+Motion is reserved for one meaning: *the AI is doing something*. Nothing else on screen
+moves, so when something does, it is always the assistant.
+
+| Screen | What moves | What it says |
+|---|---|---|
+| Capture | The lens ring breathes (100 → 106 %), its halo swells a beat later, "Plate in view" rises in | It is looking |
+| Analysing | A bead orbits the ring, two turns in 2.2 s; found items surface one by one; the progress bar fills | It is reading, and you can see what it has found so far |
+| Ask Zest | The orb breathes; the question, the answer and the next steps arrive in order | It is thinking, then answering |
+| Today · Result · Recipe detail | The Zest orb on the insight tile pulses gently | This line was written by the assistant |
+
+Built with Figma Motion keyframes and checked frame by frame from a rendered video. In the
+edge cases the motion stops on purpose — a stopped orbit is how "no connection" looks.
+
+### Edge cases
+
+Eight screens for the moments a happy path never shows — no plate in the photo, two dishes
+that look alike, a dark kitchen, no network, an unknown barcode, a day over budget, the
+first empty day, a corrected estimate. Each keeps the rules: fact first, no verdicts, one
+way forward, nothing lost. See [`04-edge-cases/`](04-edge-cases/).
+
 ### Design system
 
-- ~53 Figma variables (colour, spacing, radius) — no hardcoded values in any screen
+- ~54 Figma variables (colour, spacing, radius) — no hardcoded values in any screen
 - 11 text styles
 - Components: `Logo` (3 lockups), `StatusBar` (2 tones), `Nav` (4 active states, labelled),
   `Button` (3 kinds × L 46 / M 38), `Chip`, `Badge`, `RoundControl` (back, close, edit, flash)
