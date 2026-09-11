@@ -83,7 +83,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 |---|---|---|
 | 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
-| 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 11 happy-path screens and 9 edge cases, ~80 prototype links, 10 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
+| 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 12 happy-path screens and 9 edge cases, ~80 prototype links, 10 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
 

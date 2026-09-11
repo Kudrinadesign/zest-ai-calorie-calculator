@@ -44,3 +44,19 @@ interview") and listed what must change before a client sees it. Everything on t
   rule is written in the design system.
 - **Onboarding goals, allergies, recipe search, sorting, saved state on cards, cooking
   mode, chat history** — real, but outside the two user stories in the brief.
+
+---
+
+# Second review — 8.7 / 10
+
+The reviewer confirmed the fixes above and listed what was still open. All of it is done.
+
+| Issue | Fix |
+|---|---|
+| E06 showed "Protein to go — 124 g" while the day was already 4 g past the goal | The card reads **Protein · 4 g past goal**, 124 g. |
+| Today did not change after *Add to my day* — the meal was already counted | The story is now one afternoon: **Today (before)** shows 1,344 kcal eaten and **1,056 left** (protein 75 / 120, carbs 172 / 260, fat 38 / 80) with Zest's nudge *"Breakfast isn't logged yet — add it from your photos"*. The breakfast photo is picked from the library on Capture → Analysing → Result (**Breakfast · 09:12**, 516 kcal) → **Today (after)**: 1,860 eaten, **540 left** (96 / 120, 210 / 260, 71 / 80) with *"Added to breakfast · 516 kcal · Undo"*. The after-state is exactly what Recipes, Ask Zest and History already show. |
+| The Miso salmon advice could not be applied — and its maths did not hold (1 tsp of sesame oil is ~2 g fat a serving) | The trade-off now names a change that actually closes the gap: *"100 g of salmon instead of 140 g keeps it inside"* — 40 g less salmon is −83 kcal, −8 g protein, −5 g fat, so the day lands at 80 / 80 g. *Plan for dinner* stays available: the choice is the person's. |
+| *Start cooking* looked disabled | Secondary buttons are white with a 22 % ink edge and a semibold label (new token `action/secondary-edge`). |
+| "Light mornings" after a day over budget read as compensation | The tile is **Breakfast ideas · Your 3 favourites** — nothing to make up. |
+| History relied on colour for over-budget days | Over-budget dates carry a **+**; the legend says "A + marks a day that went over". |
+| Planning vs logging after the button | *Plan for dinner* (Recipe detail, Ask Zest) lands on **Today — dinner planned**: *"It logs when you mark it eaten"*. |

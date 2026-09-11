@@ -117,6 +117,12 @@ A reviewer scored the static screens 7.8 / 10. Every critical and high-severity 
 fixed — see `docs/REVIEW-FIXES.md`. New: S11 · Today — meal added, E09 · Camera access is
 off, a main collage stylescape, motion on every edge case.
 
+## Round 5 — second review (8.7 / 10) fixed (11 Sept)
+
+Today before/after made one coherent afternoon (1,056 → 540), E06 protein wording, honest
+salmon adjustment, enabled-looking Secondary, no compensating breakfasts, a + on over-budget
+days, Today — dinner planned. S09b (adjusted recipe) was removed by Sofia on purpose.
+
 ## Still to do
 
 Figma file shared as "Anyone with the link · can view" and renamed to `project`; file and
