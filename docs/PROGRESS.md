@@ -10,7 +10,7 @@ conversation.
 | Page | State |
 |---|---|
 | `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`) |
-| `01 · Branding` | logo exploration (3 marks) + four stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
+| `01 · Branding` | logo exploration (3 marks) + main collage **Stylescape · Zest** + four supporting stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom recipe, type ramp, spacing, radius |
 | `03 · Components` | Logo, StatusBar, Nav, Button, Chip, Badge, RoundControl |
 | `04 · Screens & Prototype` | 10 screens, wired, start point on Welcome |
@@ -103,6 +103,10 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - **Stylescape 00 · Where it comes from** — the moodboard: the peel → the mark and a drawn citrus cross-section, light not
   colour, the palette sampled with eyedroppers from a real plate, daylight photography.
 - **Cover** and **Flow map** pages built.
+- **Stylescape · Zest** — the main stylescape rebuilt as a reference-style mosaic: hard-edged
+  tiles (idea, lens + 516, live Today, icons + voice, sampled plate + palette, type + 2.2 s)
+  with stickers across the seams and text on a circle.
+- **Edge-case motion** — every edge case animates by the same AI-only rule.
 - **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
 - **Secondary button fixed**: new token `action/secondary` (ink at 7 %) — binding a paint to
   a variable drops the paint's own opacity, so the alpha has to live in the variable.

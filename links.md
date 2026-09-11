@@ -15,7 +15,7 @@ edge case (`Edge · …`).
 ## Figma pages
 
 - `00 · Cover`
-- `01 · Branding` — logo exploration and four stylescapes
+- `01 · Branding` — logo exploration, the main stylescape and four supporting stylescapes
 - `02 · Foundations` — colour, the bloom, type, spacing
 - `03 · Components` — the component library
 - `04 · Screens & Prototype` — 10 screens + 8 edge cases, connected; 9 flows in Present mode

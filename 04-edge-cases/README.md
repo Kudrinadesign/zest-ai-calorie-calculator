@@ -26,3 +26,11 @@ Every case keeps the product's rules:
 
 In the prototype each case is its own flow (`Edge · …` in Present mode), and each one
 returns to the happy path through its own button.
+
+## Motion
+
+Each case animates by the product's one motion rule — movement means the AI is working —
+so the motion names the state: searching (E01, the dashed ring drifts by a whole number
+of dashes so the loop is seamless), asking (E02), pointing at the fix (E03, the flash
+pulses), waiting (E04, the orbit is still and the bead only breathes), answering (E05),
+stating a fact (E06, the bars reach past the end), inviting (E07), learning (E08).

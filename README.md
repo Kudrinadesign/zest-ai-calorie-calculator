@@ -2,6 +2,8 @@
 
 ![Zest — cover](cover.png)
 
+![Stylescape · Zest](01-branding/stylescape-zest.png)
+
 Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
 
@@ -79,7 +81,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 
 | # | Deliverable | Where |
 |---|---|---|
-| 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration and four 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
+| 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
 | 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 10 happy-path screens and 8 edge cases, ~60 prototype links, 9 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
@@ -127,8 +129,13 @@ moves, so when something does, it is always the assistant.
 | Ask Zest | The orb breathes; the question, the answer and the next steps arrive in order | It is thinking, then answering |
 | Today · Result · Recipe detail | The Zest orb on the insight tile pulses gently | This line was written by the assistant |
 
-Built with Figma Motion keyframes and checked frame by frame from a rendered video. In the
-edge cases the motion stops on purpose — a stopped orbit is how "no connection" looks.
+Built with Figma Motion keyframes and checked frame by frame from a rendered video.
+
+The edge cases move by the same rule, and the motion says what state the AI is in: the
+dashed ring keeps drifting when it can't find a plate, the likelier dish breathes when it
+asks, the flash pulses when the fix is light, the sheet rises and then Zest says "Noted"
+when a correction is saved. With no connection the orbit stops — only a slow heartbeat on
+the bead says it is waiting.
 
 ### Edge cases
 
