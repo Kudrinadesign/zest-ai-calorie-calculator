@@ -1,5 +1,7 @@
 # Zest: AI Calorie Calculator
 
+**Kudrina Design** · UX/UI trainee test task for Jito, September 2026
+
 ![Stylescape · Zest](01-branding/stylescape-zest.png)
 
 ![Zest: cover](cover.png)
