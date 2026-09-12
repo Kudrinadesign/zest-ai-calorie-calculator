@@ -5,7 +5,7 @@ size, gap, radius, stroke, blur, opacity and type setting on them comes from a v
 style bound to variables. Pages `03 · Components` (overview) and `03.1`–`03.7` (one page per
 family) document each component with its states, tokens and usage.
 
-## Tokens — 5 collections, 354 variables
+## Tokens — 5 collections, 359 variables
 
 | Collection | Modes | Variables | What lives there |
 |---|---|---|---|

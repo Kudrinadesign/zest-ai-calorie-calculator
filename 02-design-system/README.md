@@ -13,9 +13,9 @@
 | `03.7-feedback-and-ai.png` | 03.7 · Feedback & AI | Zest orb, Insight card, Chat bubble, Status pill, Lens, What-if card |
 
 The full reference is in [`docs/DESIGN-SYSTEM.md`](../docs/DESIGN-SYSTEM.md). The totals:
-- 354 variables in 5 collections (Primitives → semantic, Typography, two Prototype collections);
+- 359 variables in 5 collections (Primitives → semantic, Typography, two Prototype collections);
 - 16 text styles and 8 effect styles, all bound to variables;
-- 64 components, each with its states.
+- 52 components (42 of them variant sets) plus 39 icons, each with its states.
 
 ## The rules worth knowing
 

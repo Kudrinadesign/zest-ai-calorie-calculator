@@ -13,15 +13,15 @@ conversation.
 | `01 · Branding` | logo exploration (3 marks) + main collage **Stylescape · Zest** + four supporting stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom, type, spacing, radius + token architecture, sizes & strokes, effects, extra text styles |
 | `03 · Components` | overview: token layers, state management, index of the family pages, Logo |
-| `03.1 – 03.7` | 64 components with all states — Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
+| `03.1 – 03.7` | 91 component nodes with all states — 39 icons, 42 variant sets, 10 single — Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
 | `04 · Screens & Prototype` | 10 screens (built from instances) + **Edge cases** section (9 cases + E03b, E05b); 13 prototype flows named after the brief's user stories |
 | `05 · Flow map` | rebuilt around the two user stories — Story 1 (dish / product), Story 2 (recipe), supporting |
 
 ## Round 7 — design system, rebuild, audit (11–12 Sept)
 
-- **Design system built properly:** 354 variables in 5 collections (Primitives → semantic,
+- **Design system built properly:** 359 variables in 5 collections (Primitives → semantic,
   Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
-  variables, 64 components with Default / Pressed / Disabled / Selected / Loading states wired
+  variables, 52 components with Default / Pressed / Disabled / Selected / Loading states wired
   as interactive components.
 - **All screens rebuilt from instances**; the old Button / Chip / RoundControl / Badge / Nav
   sets were migrated and deleted.
