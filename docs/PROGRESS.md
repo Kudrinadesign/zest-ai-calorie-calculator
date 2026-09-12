@@ -35,9 +35,11 @@ conversation.
 - **Independent audit** by a separate Claude agent — see [`DS-AUDIT.md`](DS-AUDIT.md).
 - **Exports re-done at 3x** (1170 × 2532) after feedback that the screens looked small.
 
-### Still to do
+### Not done, on purpose
 
-1. Real usability sessions (the plan and the session page are ready; no results invented).
+Usability sessions were not run. The plan and the session page are ready
+(`docs/USABILITY-TEST-PLAN.md`) and the success metrics are defined, but no findings are
+claimed anywhere: inventing them would be worse than leaving the gap visible.
 
 ## Round 8 — delivery and the move to a clean file (12 Sept)
 
@@ -173,8 +175,8 @@ Done: the Figma file is shared as "Anyone with the link · can view"; the reposi
 public; the video walkthrough is recorded and linked. Every link in `links.md` was opened
 from a browser with no Figma, GitHub or Loom login.
 
-Open: run 3–5 usability sessions with `docs/USABILITY-TEST-PLAN.md` and fill in the
-results. Nothing is invented until they happen.
+Not done, deliberately: the usability sessions. The plan exists, the metrics are named,
+and the README says plainly that nothing has been tested with users yet.
 
 ## Decisions worth defending on video
 
