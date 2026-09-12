@@ -2,7 +2,12 @@
 
 **Kudrina Design** · UX/UI trainee test task for Jito, September 2026
 
-### ▸ [Open all ten screens and the edge cases in Figma](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5)
+### Open in Figma
+
+- ▸ **[All ten screens and the edge cases](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5)** on one canvas, page `04 · Screens & Prototype`
+- ▸ **[The design system](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=334-2785)**, page `03 · Components`: the overview and an index of the seven family pages `03.1`–`03.7`
+- ▸ **[Foundations](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=51-2)**, page `02 · Foundations`: colour, the bloom, type, spacing, radii, tokens, sizes, strokes, effects
+- ▸ **[Branding](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243)**, page `01 · Branding`: the logo and five stylescapes
 
 ![Stylescape · Zest](01-branding/stylescape-zest.png)
 
