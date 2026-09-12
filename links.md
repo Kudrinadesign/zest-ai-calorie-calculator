@@ -5,6 +5,7 @@ All links open without a Figma account — checked from a fresh browser with no 
 | What | Link | Access |
 |---|---|---|
 | Figma — branding, design system, screens | [figma.com/design/dKRU4E7vOADUMMyp4EGRbG](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) | ✅ Anyone with the link · can view |
+| Figma — all screens on one canvas | [`04 · Screens & Prototype`](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) | ✅ Anyone with the link · can view |
 | **Story 1 — calories in a dish (photo)** | [prototype, starts on Today](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
 | **Story 1b — calories in a specific product** | [starts on Capture → Barcode / Type it](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=32-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
 | **Story 2 — a recipe that fits me** | [starts on Recipes](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
