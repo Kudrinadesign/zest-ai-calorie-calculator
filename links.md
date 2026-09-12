@@ -1,23 +1,27 @@
 # Links
 
-All links open without a Figma account — checked on 11 September 2026 from a fresh
-browser with no Figma login.
+All links open without a Figma account — checked from a fresh browser with no Figma login.
 
 | What | Link | Access |
 |---|---|---|
 | Figma — branding, design system, screens | [figma.com/design/mak5NZxh6OuT55iBLTpGD1](https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63) | ✅ Anyone with the link · can view |
-| Prototype — starts on Welcome | [figma.com/proto/mak5NZxh6OuT55iBLTpGD1](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&show-proto-sidebar=1&page-id=27%3A5) | ✅ Anyone with the link · can view |
-| Prototype — main scenario (log breakfast → plan dinner) | [starts on Today](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5) | ✅ clicked through logged out |
-| Video walkthrough | (Loom / Google Drive) | ⚠️ to add |
+| **Story 1 — calories in a dish (photo)** | [prototype, starts on Today](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| **Story 1b — calories in a specific product** | [starts on Capture → Barcode / Type it](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=32-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| **Story 2 — a recipe that fits me** | [starts on Recipes](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| Onboarding — first run | [starts on Welcome](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| Video walkthrough (English, all three parts) | (Loom / Google Drive) | ⚠️ **still to record** |
 
-In the prototype the flows list on the left holds **Zest · full journey** and one flow per
-edge case (`Edge · …`).
+The prototype's flow list (left sidebar in Present mode) holds the three story flows, the
+onboarding flow, and one flow per edge case (`Edge · …`), nine in all.
 
 ## Figma pages
 
-- `00 · Cover`
-- `01 · Branding` — logo exploration, the main stylescape and four supporting stylescapes
-- `02 · Foundations` — colour, the bloom, type, spacing
-- `03 · Components` — the component library
-- `04 · Screens & Prototype` — 12 screens + 9 edge cases, connected; 10 flows in Present mode
-- `05 · Flow map` — how the screens connect
+| Page | What's on it |
+|---|---|
+| `00 · Cover` | Cover and the case |
+| `01 · Branding` | Logo exploration, the main stylescape and four supporting stylescapes |
+| `02 · Foundations` | Colour, the bloom, typography, spacing, radii, token architecture, sizes, strokes, effects |
+| `03 · Components` | Overview of the design system and an index of the family pages |
+| `03.1 – 03.7` | One page per component family: Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
+| `04 · Screens & Prototype` | 10 screens with their prototype states, plus the **Edge cases** section (9 cases + 2 sub-states) |
+| `05 · Flow map` | The two user stories from the brief, end to end |

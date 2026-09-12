@@ -9,12 +9,40 @@ conversation.
 
 | Page | State |
 |---|---|
-| `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`) |
+| `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`) — **thumbnails are pre-rebuild, refresh before submitting** |
 | `01 · Branding` | logo exploration (3 marks) + main collage **Stylescape · Zest** + four supporting stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
-| `02 · Foundations` | colour, bloom recipe, type ramp, spacing, radius |
-| `03 · Components` | Logo, StatusBar, Nav, Button, Chip, Badge, RoundControl |
-| `04 · Screens & Prototype` | 10 screens, wired, start point on Welcome |
-| `05 · Flow map` | flow map 3700 × 2300 — lanes, labelled links, rules |
+| `02 · Foundations` | colour, bloom, type, spacing, radius + token architecture, sizes & strokes, effects, extra text styles |
+| `03 · Components` | overview: token layers, state management, index of the family pages, Logo |
+| `03.1 – 03.7` | 64 components with all states — Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
+| `04 · Screens & Prototype` | 10 screens (built from instances) + **Edge cases** section (9 cases + E03b, E05b); 13 prototype flows named after the brief's user stories |
+| `05 · Flow map` | rebuilt around the two user stories — Story 1 (dish / product), Story 2 (recipe), supporting |
+
+## Round 7 — design system, rebuild, audit (11–12 Sept)
+
+- **Design system built properly:** 354 variables in 5 collections (Primitives → semantic,
+  Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
+  variables, 64 components with Default / Pressed / Disabled / Selected / Loading states wired
+  as interactive components.
+- **All screens rebuilt from instances**; the old Button / Chip / RoundControl / Badge / Nav
+  sets were migrated and deleted.
+- **Today's budget** is now a ring with kcal left plus macros against their targets; the state
+  switches with the day's mode (two ring instances toggled by `day/breakfast-in`, because a
+  variant bound to a variable does **not** resolve inside a nested instance).
+- **Ask Zest** answers with a What-if card: the ring shows where the day lands with the meal,
+  the pale segment (the meal in question) breathes.
+- **Photography:** the capture flow is top-down with the whole dish centred in the lens.
+- **Edge cases** rebuilt to the spec as a section below the main flow.
+- **Independent audit** by a separate Claude agent — see [`DS-AUDIT.md`](DS-AUDIT.md).
+- **Exports re-done at 3x** (1170 × 2532) after feedback that the screens looked small.
+
+### Still to do
+
+1. **Video walkthrough** (English, showing branding, design system and final designs) — the
+   brief requires it; not recorded.
+2. **Publish the GitHub repo** and check every link in incognito — not published yet, on Sofia's
+   instruction.
+3. Refresh the Cover and "The case" thumbnails, which still show pre-rebuild screens.
+4. Real usability sessions (the plan and the session page are ready; no results invented).
 
 ## Screens
 

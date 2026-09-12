@@ -67,10 +67,12 @@ from what the person actually ate.** The atmosphere is data, not decoration.
 | Bloom | `bloom/plum` → `bloom/mulberry` → `bloom/ember` → `bloom/amber` | `#4A2238` `#8C3A56` `#E27A52` `#F2B585` |
 | Sampled from food | `bloom/butter` | `#EDD28E` |
 | **Action** — committing button, nav camera | `action/primary` | `#9E2044` burgundy |
-| State (selected, progress, shutter) | `accent/ember` | `#D7650E` |
+| State (shutter, progress, eaten arc) | `accent/ember` | `#D7650E` |
+| Selection (chip, radio, toggle, today's date) — white text 4.9:1 | `accent/ember-strong` | `#BF540A` |
 | Protein · Carbs · Fat | `macro/*` | `#4550D7` `#E6BC6A` `#CE4A34` |
 | Opaque surface (nav, inputs) · suggestion tiles | `surface/raised` · `glass/peach` | `#FFFFFF` · `#F4BFA5` 66 % |
-| Secondary button | `action/secondary` | ink at 7 % |
+| Secondary button | `action/secondary` + `action/secondary-edge` | white with an ink 22 % edge |
+| Disabled | `surface/disabled` + `ink/tertiary` | 4.1:1 — readable, though disabled controls are exempt |
 
 **The rule that keeps controls readable:** a control is never the colour of the
 atmosphere. The committing action is burgundy on every screen with no exceptions and the
@@ -80,8 +82,9 @@ because the graphic values are too light to carry type.
 
 ### Type
 
-**Manrope**, one family, eleven styles. Display sizes run Light so that large numbers stay
-calm; `Metric/*` styles carry every figure.
+**Manrope**, one family, sixteen styles, each bound to the `Typography` variable collection
+(family, weight, size, line height, tracking). Display sizes run Light so that large numbers
+stay calm; `Metric/*` styles carry every figure.
 
 ### Layout contract
 
@@ -95,10 +98,22 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 | # | Deliverable | Where |
 |---|---|---|
 | 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
-| 2 | Design system | Figma pages `02 · Foundations` and `03 · Components` |
-| 3 | Key screens & flows | Figma page `05 · Flow map` ([`03-screens/00-flow-map.png`](03-screens/00-flow-map.png)) and page `04 · Screens & Prototype` — 12 happy-path screens and 9 edge cases, ~80 prototype links, 10 flows (the full journey + one per edge case). Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
+| 2 | Design system | Figma pages `02 · Foundations`, `03 · Components` (overview) and `03.1`–`03.7` (one page per family): 354 variables in 5 collections, 16 text styles, 8 effect styles, 64 components with all their states. See [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) and the independent audit [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
+| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 main screens (with their prototype states) and the **Edge cases** section (9 cases + 2 sub-states), every screen built from design-system instances. Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review, [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md) for the contrast check; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
+
+### Against the brief
+
+| The brief asks for | Status |
+|---|---|
+| Branding / stylescapes | ✅ `01 · Branding` — 1 main collage + 4 supporting stylescapes, exports in [`01-branding/`](01-branding/) |
+| Design system | ✅ 354 variables, 16 text styles, 8 effect styles, 64 components with states — [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
+| Key screens / key flows, covering both user stories | ✅ Story 1 (dish **and** specific product) and Story 2 (a recipe that fits) are separate flows in the prototype and separate lanes on the flow map |
+| Made with Claude Code, not by hand | ✅ Every token, component, screen and link was written as Plugin API scripts run through the Figma MCP |
+| Everything in a GitHub repository | ⏳ The repo is ready; **not published yet** |
+| Accessible in incognito | ✅ for Figma (checked logged out) · ⏳ for the repo and the video |
+| Video presentation in English showing all three parts | ❌ **not recorded** — script ready in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
 
 ### Screens
 
@@ -135,13 +150,16 @@ lives in the navigation.
 Present → **Main · log breakfast → plan dinner** (starts on Today). Every step below was
 clicked through in the published prototype, logged out:
 
-1. **Today** — 1,056 kcal left; Zest: *"Breakfast isn't logged yet."* Tap the tile.
+1. **Today** — the Budget card's ring shows 1,056 kcal left, with protein 75 / 120, carbs
+   172 / 260 and fat 38 / 80 beside it; Zest: *"Breakfast isn't logged yet."* Tap the tile.
 2. **Capture** → pick the breakfast photo from the library → **Analysing** → **Result**
    (Breakfast · 09:12, 516 kcal).
-3. **Add to my day** → **Today recalculates**: 540 left, protein 96 / 120, carbs 210 / 260,
-   fat 71 / 80, bars and Zest's line update, *"Added to breakfast · 516 kcal · Undo"*.
-   **Undo** puts the day back to 1,056.
-4. **Dinners that fit** → **Recipes** → **Miso salmon** → **Apply adjustment**: the recipe
+3. **Add to my day** → **Today recalculates**: the ring fills to 540 left, protein 96 / 120,
+   carbs 210 / 260, fat 71 / 80, Zest's line changes, *"Added to breakfast · 516 kcal ·
+   Undo"*. **Undo** puts the day back to 1,056. (The Budget card's variant is bound to the day
+   mode, so the ring and the bars move together.)
+4. **Dinners that fit** (scroll Today, or the Recipes tab) → **Recipes** → **Miso salmon** →
+   **Apply adjustment**: the recipe
    recalculates in place — 480 → ≈ 400 kcal, protein 38 → 30 g, fat 14 → 9 g, salmon
    2 × 140 → 2 × 100 g. *Back to 140 g* reverses it.
 5. **Plan for dinner** → Today: *"Dinner planned · It logs when you mark it eaten."*
@@ -160,30 +178,47 @@ moves, so when something does, it is always the assistant.
 |---|---|---|
 | Capture | The lens ring breathes (100 → 106 %), its halo swells a beat later, "Plate in view" rises in | It is looking |
 | Analysing | A bead orbits the ring, two turns in 2.2 s; found items surface one by one; the progress bar fills | It is reading, and you can see what it has found so far |
-| Ask Zest | The orb breathes; the question, the answer and the next steps arrive in order | It is thinking, then answering |
-| Today · Result · Recipe detail | The Zest orb on the insight tile pulses gently | This line was written by the assistant |
+| Ask Zest | The question, the answer and the next steps arrive in order; in the **What-if card** the pale segment of the ring — the pasta being asked about — breathes | It is answering, and showing the consequence rather than a verdict |
+| Today · Result · Recipe detail · sheets | The Zest orb breathes (its *Thinking* state carries the keyframes, so every instance inherits them) | This line was written by the assistant |
 
 Built with Figma Motion keyframes and checked frame by frame from a rendered video.
 
-The edge cases move by the same rule, and the motion says what state the AI is in: the
-dashed ring keeps drifting when it can't find a plate, the likelier dish breathes when it
-asks, the flash pulses when the fix is light, the sheet rises and then Zest says "Noted"
-when a correction is saved. With no connection the orbit stops — only a slow heartbeat on
-the bead says it is waiting.
+In the edge cases the lens goes dim and still whenever Zest is not reading (no plate, too
+dark, offline, camera off); the orb breathes when it asks which of two dishes it is.
 
 ### Edge cases
 
-Nine screens for the moments a happy path never shows — no plate in the photo, two dishes
-that look alike, a dark kitchen, no network, an unknown barcode, a day over budget, the
-first empty day, a corrected estimate, the camera turned off. Each keeps the rules: fact first, no verdicts, one
-way forward, nothing lost. See [`04-edge-cases/`](04-edge-cases/).
+The **Edge cases** section below the main flow covers the moments a happy path never shows:
+- no food in the photo;
+- two dishes that look alike;
+- a dark kitchen (plus the exposed state after the flash);
+- no network;
+- an unknown barcode (plus the label camera);
+- a day past the target;
+- the first empty day;
+- a corrected estimate;
+- the camera turned off.
+
+Each case keeps the rules: fact first, no verdicts, one way forward, nothing lost. Each is built only from design-system instances. See [`04-edge-cases/`](04-edge-cases/).
 
 ### Design system
 
-- ~54 Figma variables (colour, spacing, radius) — no hardcoded values in any screen
-- 11 text styles
-- Components: `Logo` (3 lockups), `StatusBar` (2 tones), `Nav` (4 active states, labelled),
-  `Button` (3 kinds × L 46 / M 38), `Chip`, `Badge`, `RoundControl` (back, close, edit, flash)
+- **354 variables in 5 collections:**
+  - Primitives (hidden) → semantic Zest · Natural;
+  - Typography;
+  - Prototype · Day and Prototype · Recipe for app state.
+
+  Every variable has a scope and code syntax.
+- **16 text styles and 8 effect styles,** all bound to variables.
+- **64 components with all their states,** e.g.:
+  - Button, Ghost button, Icon button, Chip, Toggle, Radio, Segmented control;
+  - Search field, Stepper, Composer;
+  - Nav bar (leading / trailing icon), Tab bar, Day / Week strip, Calendar day;
+  - Day ring, Budget card, Macro stat, list rows, Bottom sheet, Snackbar;
+  - Zest orb, Lens, What-if card…
+
+  Interactive states are wired as interactive components.
+- **Full reference:** [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md).
 
 ---
 
@@ -206,8 +241,9 @@ Going over a target is stated as a fact in the brand's own clay tone.
 
 ## Photography
 
-Nine photographs, all **CC0**, from the Unsplash archive on Wikimedia Commons,
-centre-cropped to the ratios the layouts need. Credits — not required by CC0, but given —
+All photographs are **CC0**, from the Unsplash archive on Wikimedia Commons.
+- **Capture flow:** a real user photographs from above with the whole dish in view, so every photo is top-down, with the dish centred inside the scanner ring. That's also what a calorie estimate needs.
+- **Recipes:** these photos are editorial, so angled shots are fine there. Credits — not required by CC0, but given —
 are in [`01-branding/PHOTO-CREDITS.md`](01-branding/PHOTO-CREDITS.md).
 
 ---

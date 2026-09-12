@@ -1,55 +1,43 @@
 # Design system
 
-`foundations.png` — colour, the bloom recipe, the type ramp, spacing and radius.
-`components.png` — the component library.
-
-Built as native Figma variables, styles and components, so the screens contain no
-hardcoded values. Changing a token re-colours the whole product; the direction was
-switched once mid-project and the screens followed automatically.
-
-## Foundations
-
-- ~54 variables across `ground/*`, `surface/*`, `bloom/*`, `glass/*`, `ink/*`,
-  `onbloom/*`, `accent/*`, `action/*`, `macro/*`, `track/*`, `space/*`, `radius/*`
-- 11 text styles, all Manrope: `Head/XL·L·M`, `Text/Title·Body·S·Label·Caption`,
-  `Metric/XL·L·S`
-
-| Role | Token | Value |
+| File | Figma page | What it shows |
 |---|---|---|
-| Committing action, nav camera | `action/primary` | `#9E2044` |
-| State — selected, progress, shutter | `accent/ember` | `#D7650E` |
-| Protein · Carbs · Fat | `macro/*` | `#4550D7` `#E6BC6A` `#CE4A34` |
-| Secondary button | `action/secondary` | ink at 7 % |
-| Opaque surface — nav, input fields | `surface/raised` | `#FFFFFF` |
-| Suggestion tiles — recipe teaser, Zest's reply | `glass/peach` | `#F4BFA5` at 66 % |
+| `components.png` | 03 · Components | Overview: how tokens, components and state fit together, and an index of the family pages |
+| `foundations.png` | 02 · Foundations | Colour, the bloom, typography, spacing and radius, token architecture, sizes and strokes, effects |
+| `03.1-icons.png` | 03.1 · Icons | 39 Lucide icons as components (stroke and colour from variables) |
+| `03.2-actions.png` | 03.2 · Actions | Button, Ghost button, Icon button, Chip, Shutter & Library, with every state |
+| `03.3-inputs-and-selection.png` | 03.3 · Inputs & selection | Toggle, Radio, Step indicator, Segmented control, Stepper, Search field, Composer |
+| `03.4-navigation.png` | 03.4 · Navigation | Status bar, Nav bar, Tab bar, Day / Week strip, Calendar day |
+| `03.5-data-display.png` | 03.5 · Data display | Macro bar, Macro stat, Tag, Bullet, Badge / Tile head, Day ring, list rows |
+| `03.6-cards-and-surfaces.png` | 03.6 · Cards & surfaces | Budget card, Today tiles, Recipe card, Snackbar, Bottom sheet, Notice card |
+| `03.7-feedback-and-ai.png` | 03.7 · Feedback & AI | Zest orb, Insight card, Chat bubble, Status pill, Lens, What-if card |
 
-## Components
-
-`Logo` (mark, horizontal, stacked) · `StatusBar` (dark, light) ·
-`Nav` (Today, Recipes, Zest, History active) · `Button` (Primary, Secondary, Danger × L 46, M 38) ·
-`Chip` · `Badge` · `RoundControl` (back, close, edit, flash)
+The full reference is in [`docs/DESIGN-SYSTEM.md`](../docs/DESIGN-SYSTEM.md). The totals:
+- 354 variables in 5 collections (Primitives → semantic, Typography, two Prototype collections);
+- 16 text styles and 8 effect styles, all bound to variables;
+- 64 components, each with its states.
 
 ## The rules worth knowing
 
-**One burgundy button per screen.** Primary sits at the bottom, full width, and commits
-something; pressing it returns to Today (a sheet's primary returns to the screen beneath).
-Screens that have one hide the nav. Secondary is ink at 7 % so it reads on paper and on
-the bloom alike — the earlier white glass disappeared on white sheets.
+**One primary button per screen.** It sits at the bottom, full width, and commits something.
+Sticky buttons sit on an opaque veil and never cover content.
 
-**Four places and one verb.** The nav holds Today · Recipes · Zest · History, each with a
-label; the active one sits on a soft peach pill. The camera in the middle is the verb and
-opens Capture from every place.
+**Four places and one verb.** The tab bar holds Today · Recipes · Zest · History. The camera
+in the middle is the verb.
 
-**`‹` and `×` mean different things.** `‹` goes one step back. `×` leaves a flow without
-saving.
+**`‹` and `×` mean different things.** `‹` goes one step back. `×` leaves a flow without saving.
 
 **Controls are never the colour of the atmosphere.** The bloom never borrows
-`action/primary`; ember marks state and the shutter. Red appears only on destructive
-actions.
+`action/primary`. Selection is always `accent/ember-strong` with white text. Red appears only
+on destructive actions and never on food data.
 
-**Every macro hue has a text-safe twin.** `macro/protein` is for bars and
-`macro/protein-ink` is for the number beside it.
+**Every macro hue has a text-safe twin.** `macro/protein` is for bars, `macro/protein-ink`
+for the number beside it, and `macro/protein-soft` for the "with this meal" part of a
+What-if bar.
 
-**Motion means the AI is working.** Nothing else animates: the lens breathes while it
-looks, a bead orbits while it reads, the orb breathes while it thinks. When the AI is
-stuck (no connection), the motion stops.
+**Motion means the AI is working.** Nothing else moves:
+- the lens breathes while it looks, and a bead orbits while it reads;
+- the Zest orb breathes in its Thinking state;
+- the What-if ring pulses the meal being asked about.
+
+When the AI is stuck (no connection, too dark), the lens goes dim and still.
