@@ -7,6 +7,9 @@
 Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
 
+**▶ [Video walkthrough](https://www.loom.com/share/d5620a393db44680b98bd9c146e396bc)** — branding, design system and the final designs.
+**Figma:** [file](https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63) · [prototype — Story 1, calories in a dish](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
+
 Everything here was produced with Claude Code driving Figma through the Figma MCP —
 tokens, components, screens and prototype links are written as code and created as native
 Figma nodes. Nothing was drawn by hand on the canvas.
@@ -111,9 +114,9 @@ See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/
 | Design system | ✅ 354 variables, 16 text styles, 8 effect styles, 64 components with states — [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
 | Key screens / key flows, covering both user stories | ✅ Story 1 (dish **and** specific product) and Story 2 (a recipe that fits) are separate flows in the prototype and separate lanes on the flow map |
 | Made with Claude Code, not by hand | ✅ Every token, component, screen and link was written as Plugin API scripts run through the Figma MCP |
-| Everything in a GitHub repository | ⏳ The repo is ready; **not published yet** |
-| Accessible in incognito | ✅ for Figma (checked logged out) · ⏳ for the repo and the video |
-| Video presentation in English showing all three parts | ❌ **not recorded** — script ready in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
+| Everything in a GitHub repository | ✅ this repository |
+| Accessible in incognito | ✅ Figma, the video and this repository — all checked logged out |
+| Video presentation in English showing all three parts | ✅ [Loom walkthrough](https://www.loom.com/share/d5620a393db44680b98bd9c146e396bc) · script in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
 
 ### Screens
 
