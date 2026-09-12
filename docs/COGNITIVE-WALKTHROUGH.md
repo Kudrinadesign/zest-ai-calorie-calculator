@@ -1,4 +1,4 @@
-# Cognitive walkthrough — 11 September 2026
+# Cognitive walkthrough: 11 September 2026
 
 **What this is:** an expert walkthrough of the seven tasks in
 [`USABILITY-TEST-PLAN.md`](USABILITY-TEST-PLAN.md), done by Claude in the published
@@ -17,13 +17,13 @@ worked?*
 
 | # | Task | Prototype works? | Where a first-time user could stumble |
 |---|---|---|---|
-| 1 | Log this morning's breakfast from a photo | ✅ Today → Capture → library → Analysing → Result | The Zest tile ("Add it from your photos") has **no tap affordance** — "Dinners that fit" next to it has a chevron, this doesn't. On Capture the **library thumbnail is unlabeled** (46 px, bottom-left); someone looking for "this morning's photo" may press the shutter instead. |
+| 1 | Log this morning's breakfast from a photo | ✅ Today → Capture → library → Analysing → Result | The Zest tile ("Add it from your photos"), has **no tap affordance**: "Dinners that fit" next to it has a chevron, this doesn't. On Capture the **library thumbnail is unlabeled** (46 px, bottom-left); someone looking for "this morning's photo" may press the shutter instead. |
 | 2 | Is Zest sure? What if a line is wrong? | ✅ Any found line → correction sheet (E08), incl. the half-veiled one | "estimated" and "≈" are visible. "Tap a line to adjust" is an 11 px caption and the rows have **no edit affordance** (no chevron or pencil), so the fix depends on reading the caption. |
-| 3 | Add it — what changed? | ✅ Today recalculates 1,056 → 540, macros, bars, Zest's line; snackbar | Clear. The changed numbers are not highlighted; the snackbar's second line ("540 kcal left of 2,400") carries the change. The snackbar covers the bottom of the "Dinners that fit" tile until dismissed. |
-| 4 | Take it back | ✅ Undo → 1,056 | Clear — Undo is the only amber text on a dark bar. |
+| 3 | Add it: what changed? | ✅ Today recalculates 1,056 → 540, macros, bars, Zest's line; snackbar | Clear. The changed numbers are not highlighted; the snackbar's second line ("540 kcal left of 2,400"), carries the change. The snackbar covers the bottom of the "Dinners that fit" tile until dismissed. |
+| 4 | Take it back | ✅ Undo → 1,056 | Clear: Undo is the only amber text on a dark bar. |
 | 5 | Find a dinner that fits | ✅ Dinners that fit / nav → Recipes → Recipe detail | Clear. |
 | 6 | Anything to know? Can you act on it? | ✅ Apply adjustment recalculates in place; Back to 140 g | The trade-off is a two-line 13 px sentence; the button label ("−5 g fat") carries the point if the sentence is skimmed. |
-| 7 | Plan it — is it counted yet? | ✅ Plan for dinner → "Dinner planned · It logs when you mark it eaten" | Once the snackbar is gone, **Today shows no trace of the plan** — nothing to check when someone asks "is it counted?" later. After *Apply adjustment*, nothing says which version (480 or ≈ 400 kcal) was planned. |
+| 7 | Plan it: is it counted yet? | ✅ Plan for dinner → "Dinner planned · It logs when you mark it eaten" | Once the snackbar is gone, **Today shows no trace of the plan**: nothing to check when someone asks "is it counted?" later. After *Apply adjustment*, nothing says which version (480 or ≈ 400 kcal), was planned. |
 
 ## Predicted issues, by severity
 
@@ -36,7 +36,7 @@ Status after the walkthrough: **W1–W4 fixed** in the file (re-checked by click
 | W3 | Found lines have no edit affordance | Medium | ✅ a chevron on each line; the caption stays | Task 2: do people find the correction without prompting? |
 | W4 | A planned dinner leaves no trace on Today | Medium | ✅ in the planned state the Dinners tile reads "Tonight · dinner planned, not logged yet" | Task 7: can people answer "is it counted?" a minute later? |
 | W5 | Snackbars cover content and don't auto-dismiss (prototype) | Low | Auto-dismiss after ~6 s in the build; in the prototype, a tap anywhere closes it | Task 3 |
-| W6 | Undo, then Plan, shows after-breakfast totals | Low | Prototype limitation — a real build computes the day | Tell participants if they hit it |
+| W6 | Undo, then Plan, shows after-breakfast totals | Low | Prototype limitation: a real build computes the day | Tell participants if they hit it |
 
 ## Verified along the way
 

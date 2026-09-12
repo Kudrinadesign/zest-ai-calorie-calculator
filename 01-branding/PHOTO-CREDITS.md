@@ -5,7 +5,7 @@ Every image is **CC0 / public domain**, sourced from the Unsplash archive on Com
 No image requires attribution under its licence; credit is given here anyway because
 attribution is the right default when someone else's work carries yours.
 
-## Capture flow — shot from above, whole dish in frame
+## Capture flow: shot from above, whole dish in frame
 
 Calorie estimates need the whole plate in view, so every photo the user "takes" in the
 prototype is top-down, with the whole dish centred inside the scanner ring. These frames were
@@ -24,7 +24,7 @@ composed for the ring:
 | Trendy Breakfast | E06 breakfast ideas | CC0 | Brooke Lark (brookelark) | [Commons](https://commons.wikimedia.org/wiki/File:Trendy_Breakfast_(Unsplash).jpg) |
 | Avocado Rose Toast | E06 breakfast ideas | CC0 | Brenda Godinez (craveth) | [Commons](https://commons.wikimedia.org/wiki/File:Avocado_Rose_Toast_(Unsplash).jpg) |
 
-## Recipes and stylescape — editorial
+## Recipes and stylescape: editorial
 
 Recipe photos are editorial (how a dish looks, not what a user shot), so angled shots are fine
 there.
@@ -32,7 +32,7 @@ there.
 | File | Used in | Licence | Photographer | Source |
 |---|---|---|---|---|
 | avocado-toast | Stylescapes | CC0 | Caroline Attwood carolineattwood | [Commons](https://commons.wikimedia.org/wiki/File:Caroline_Attwood_2017-03-21_(Unsplash).jpg) |
-| breakfast-flatlay | — | CC0 | Jannis Brandt _jannis | [Commons](https://commons.wikimedia.org/wiki/File:Healthy_Trendy_Brunch_(Unsplash).jpg) |
+| breakfast-flatlay |  | CC0 | Jannis Brandt _jannis | [Commons](https://commons.wikimedia.org/wiki/File:Healthy_Trendy_Brunch_(Unsplash).jpg) |
 | noodle-bowl | Recipe card | CC0 | Noahs Knight noahsknight | [Commons](https://commons.wikimedia.org/wiki/File:Lan_Jie_Famous_Curry_Noodles_(Unsplash).jpg) |
 | pasta-plate | Recipe card | CC0 | Eaters Collective eaterscollective | [Commons](https://commons.wikimedia.org/wiki/File:Plate_of_Pasta_(Unsplash).jpg) |
 | pasta-spread | Recipe card | CC0 | Brooke Lark brookelark | [Commons](https://commons.wikimedia.org/wiki/File:Pasta_in_Amorebieta_(Unsplash).jpg) |

@@ -1,20 +1,20 @@
-# Usability test plan — 3 to 5 sessions
+# Usability test plan: 3 to 5 sessions
 
 **Status: not run yet.** Nothing below is a result. An expert walkthrough of the same tasks
-(no participants) is in [`COGNITIVE-WALKTHROUGH.md`](COGNITIVE-WALKTHROUGH.md) — its predicted issues W1–W6
+(no participants), is in [`COGNITIVE-WALKTHROUGH.md`](COGNITIVE-WALKTHROUGH.md); its predicted issues W1–W6
 are the things to watch for. The results section is an empty
-template to fill in after real sessions — do not fill it with guesses.
+template to fill in after real sessions: do not fill it with guesses.
 
 ## What we want to learn
 
 1. Can someone log a meal from a photo **without help**, and do they notice that the
    numbers are estimates they can change?
-2. After *Add to my day*, do they understand what changed on Today — and that **Undo**
+2. After *Add to my day*, do they understand what changed on Today, and that **Undo**
    exists?
 3. Can they find a dinner that fits, understand *why it fits*, and use **Apply
    adjustment**?
 4. Do they understand the difference between **planning** a dinner and **logging** it?
-5. How does the tone land — does anything feel like a verdict?
+5. How does the tone land: does anything feel like a verdict?
 
 ## Participants
 
@@ -24,9 +24,9 @@ remote or in person, on a phone if possible.
 
 ## Setup
 
-- **Session page:** [Zest Usability Sessions](https://claude.ai/code/artifact/38476900-dbc8-4659-848d-10bf542f2a15) — the seven tasks in order with a timer, outcome, SEQ 1–7 and notes per task, saved per participant (P1–P5) to a shared record; a live summary and a CSV export. Private to Sofia unless shared. After the sessions, Claude reads the record back and writes the findings from it.
+- **Session page:** [Zest Usability Sessions](https://claude.ai/code/artifact/38476900-dbc8-4659-848d-10bf542f2a15), the seven tasks in order with a timer, outcome, SEQ 1–7 and notes per task, saved per participant (P1–P5), to a shared record; a live summary and a CSV export. Private to Sofia unless shared. After the sessions, Claude reads the record back and writes the findings from it.
 
-- Prototype: the **Main · log breakfast → plan dinner** flow — [link in `links.md`](../links.md)
+- Prototype: the **Main · log breakfast → plan dinner** flow, [link in `links.md`](../links.md)
   (starting point `S02 · Today`). On a phone, open it in the Figma app or the browser and
   add it to the home screen for full screen.
 - Record the screen and voice with consent. Ask them to think aloud.
@@ -35,7 +35,7 @@ remote or in person, on a phone if possible.
 
 ## Script
 
-> Thanks for helping. We're testing the app, not you — there are no wrong answers. Please
+> Thanks for helping. We're testing the app, not you; there are no wrong answers. Please
 > say what you're thinking as you go. It's an early prototype, so some things won't work;
 > that's fine, just tell me what you expected.
 
@@ -74,7 +74,7 @@ SEQ score · quotes. Also note any moment someone reads "≈" or the trade-off a
 - *Start cooking*, the bookmark, recipe filters and the chat input are not wired.
 - Barcode and *Type it* on the camera lead to one example product (Greek yoghurt).
 
-## Results — to fill in after real sessions
+## Results: to fill in after real sessions
 
 | Participant | Profile | T1 | T2 | T3 | T4 | T5 | T6 | T7 | Notes |
 |---|---|---|---|---|---|---|---|---|---|

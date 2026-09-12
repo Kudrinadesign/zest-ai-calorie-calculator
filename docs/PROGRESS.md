@@ -5,19 +5,19 @@ conversation.
 
 ## Figma file
 
-`https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/` — file key `dKRU4E7vOADUMMyp4EGRbG`
+`https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/`, file key `dKRU4E7vOADUMMyp4EGRbG`
 
 | Page | State |
 |---|---|
-| `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`) — **thumbnails are pre-rebuild, refresh before submitting** |
+| `00 · Cover` | cover 1920 × 1080 (exported as `cover.png`): **thumbnails are pre-rebuild, refresh before submitting** |
 | `01 · Branding` | logo exploration (3 marks) + main collage **Stylescape · Zest** + four supporting stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom, type, spacing, radius + token architecture, sizes & strokes, effects, extra text styles |
 | `03 · Components` | overview: token layers, state management, index of the family pages, Logo |
-| `03.1 – 03.7` | 91 component nodes with all states — 39 icons, 42 variant sets, 10 single — Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
+| `03.1 – 03.7` | 91 component nodes with all states (39 icons, 42 variant sets, 10 single), Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
 | `04 · Screens & Prototype` | 10 screens (built from instances) + **Edge cases** section (9 cases + E03b, E05b); 13 prototype flows named after the brief's user stories |
-| `05 · Flow map` | rebuilt around the two user stories — Story 1 (dish / product), Story 2 (recipe), supporting |
+| `05 · Flow map` | rebuilt around the two user stories: Story 1 (dish / product), Story 2 (recipe), supporting |
 
-## Round 7 — design system, rebuild, audit (11–12 Sept)
+## Round 7: design system, rebuild, audit (11–12 Sept)
 
 - **Design system built properly:** 359 variables in 5 collections (Primitives → semantic,
   Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
@@ -32,7 +32,7 @@ conversation.
   the pale segment (the meal in question) breathes.
 - **Photography:** the capture flow is top-down with the whole dish centred in the lens.
 - **Edge cases** rebuilt to the spec as a section below the main flow.
-- **Independent audit** by a separate Claude agent — see [`DS-AUDIT.md`](DS-AUDIT.md).
+- **Independent audit** by a separate Claude agent: see [`DS-AUDIT.md`](DS-AUDIT.md).
 - **Exports re-done at 3x** (1170 × 2532) after feedback that the screens looked small.
 
 ### Not done, on purpose
@@ -41,14 +41,14 @@ Usability sessions were not run. The plan and the session page are ready
 (`docs/USABILITY-TEST-PLAN.md`) and the success metrics are defined, but no findings are
 claimed anywhere: inventing them would be worse than leaving the gap visible.
 
-## Round 8 — delivery and the move to a clean file (12 Sept)
+## Round 8: delivery and the move to a clean file (12 Sept)
 
 - **Video walkthrough recorded** and linked from the README and `links.md`.
 - **Repository published** at `cona16860-boop/zest-ai-calorie-calculator`, public; README,
   raw assets, the Figma file, the four prototype links and the video all checked from a
   browser with no login.
 - **Cover and "The case" rebuilt** from the current screens.
-- **The whole design moved to a new Figma file** — `dKRU4E7vOADUMMyp4EGRbG`. The old file
+- **The whole design moved to a new Figma file**: `dKRU4E7vOADUMMyp4EGRbG`. The old file
   was duplicated and then deleted, so nobody who had its link can reach the work any more.
   The duplicate keeps every node ID, so only the file key changed in the links. Verified
   against the original: 359 variables in 5 collections, 16 text and 8 effect styles,
@@ -57,13 +57,13 @@ claimed anywhere: inventing them would be worse than leaving the gap visible.
 
 ## Screens
 
-Eleven screens now (S11 · Today — meal added was added in round 4). **Add (sheet), Saved and Profile were deleted on purpose — do not
+Eleven screens now (S11 · Today: meal added was added in round 4). **Add (sheet), Saved and Profile were deleted on purpose, do not
 bring them back.**
 
 S01 Welcome · S02 Today · S03 Capture · S04 Analysing · S05 Result · S06 Add a product ·
 S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 
-## Round 2 — softer colour, button logic, screen logic (11 Sept)
+## Round 2: softer colour, button logic, screen logic (11 Sept)
 
 ### Done
 
@@ -79,13 +79,13 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - **Zest insight tiles** (Today, Result, Recipe detail) moved off the loud orange gradient
   to a peach wash with ink text.
 
-### Sofia's manual edits in Figma — these are the intended values
+### Sofia's manual edits in Figma; these are the intended values
 
-- `#9E2044` — every primary CTA, the Ask Zest send button, the camera button in the nav
-- `#D7650E` — state: selected day, shutter disc, analysing progress and checks
-- `#4550D7` / `#FBC357` / `#CE4A34` — protein / carbs / fat bars
-- `#FFCB2F` — butter/leaf bloom ellipses (also at 60 %)
-- `#F4BFA5` at 66 % — Recipes tile on Today, Zest's reply bubble
+- `#9E2044`: every primary CTA, the Ask Zest send button, the camera button in the nav
+- `#D7650E`: state: selected day, shutter disc, analysing progress and checks
+- `#4550D7` / `#FBC357` / `#CE4A34`: protein / carbs / fat bars
+- `#FFCB2F`: butter/leaf bloom ellipses (also at 60 %)
+- `#F4BFA5` at 66 %: Recipes tile on Today, Zest's reply bubble
 - Today's Zest tile: gradient `#8E4157 → #FCEDDE`
 - Nav Zest orb gradient `#E9A452 → #FF4901`; Welcome logo recoloured (olive leaf `#A2AA0C`)
 - **Primary button height 46** (was 60), label Manrope Medium 13
@@ -121,7 +121,7 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 
 | Kind | Screens | Top-left | Bottom | Transition in |
 |---|---|---|---|---|
-| Place (tab) | Today, Recipes, Zest, History | — | Nav | Dissolve 300 ms, ease-out |
+| Place (tab) | Today, Recipes, Zest, History |  | Nav | Dissolve 300 ms, ease-out |
 | Detail | Recipe detail | ‹ back | one CTA | Slide in from right, gentle spring |
 | Capture flow | Capture → Analysing → Result, Capture → Add a product | × leaves the flow | one CTA | Move in from bottom |
 
@@ -130,41 +130,41 @@ S07 Ask Zest · S08 Recipes · S09 Recipe detail · S10 History
 - The camera in the nav always opens Capture, from every tab.
 - Every committing button returns to Today, where the meal lands.
 
-## Round 3 — stylescapes, AI motion, edge cases (11 Sept)
+## Round 3: stylescapes, AI motion, edge cases (11 Sept)
 
 - **Three stylescapes** 4000 × 1000 in the reference format, built from live screens,
   components and tokens: Natural light · The plate is data · No verdicts. The outdated v1
   stylescape was removed from Figma.
 - **AI motion** (Figma Motion keyframes) on Capture, Analysing, Ask Zest and the Zest orb
-  on insight tiles — verified from rendered video frames.
+  on insight tiles: verified from rendered video frames.
 - **Eight edge cases** (E01–E08) on the Screens page, row at y = 1100, each its own
   prototype flow. Exports in `04-edge-cases/`.
-- **Stylescape 00 · Where it comes from** — the moodboard: the peel → the mark and a drawn citrus cross-section, light not
+- **Stylescape 00 · Where it comes from**: the moodboard: the peel → the mark and a drawn citrus cross-section, light not
   colour, the palette sampled with eyedroppers from a real plate, daylight photography.
 - **Cover** and **Flow map** pages built.
-- **Stylescape · Zest** — the main stylescape rebuilt as a reference-style mosaic: hard-edged
+- **Stylescape · Zest**: the main stylescape rebuilt as a reference-style mosaic: hard-edged
   tiles (idea, lens + 516, live Today, icons + voice, sampled plate + palette, type + 2.2 s)
   with stickers across the seams and text on a circle.
-- **Edge-case motion** — every edge case animates by the same AI-only rule.
+- **Edge-case motion**: every edge case animates by the same AI-only rule.
 - **Yellows muted** at Sofia's request: `bloom/butter` `#EDD28E`, `macro/carbs` `#E6BC6A`.
-- **Secondary button fixed**: new token `action/secondary` (ink at 7 %) — binding a paint to
+- **Secondary button fixed**: new token `action/secondary` (ink at 7 %), binding a paint to
   a variable drops the paint's own opacity, so the alpha has to live in the variable.
 
-## Round 4 — review fixes (11 Sept)
+## Round 4: review fixes (11 Sept)
 
 A reviewer scored the static screens 7.8 / 10. Every critical and high-severity point is
-fixed — see `docs/REVIEW-FIXES.md`. New: S11 · Today — meal added, E09 · Camera access is
+fixed (see `docs/REVIEW-FIXES.md`. New: S11 · Today), meal added, E09 · Camera access is
 off, a main collage stylescape, motion on every edge case.
 
-## Round 5 — second review (8.7 / 10) fixed (11 Sept)
+## Round 5: second review (8.7 / 10), fixed (11 Sept)
 
 Today before/after made one coherent afternoon (1,056 → 540), E06 protein wording, honest
 salmon adjustment, enabled-looking Secondary, no compensating breakfasts, a + on over-budget
-days, Today — dinner planned. S09b (adjusted recipe) was removed by Sofia on purpose.
+days, Today: dinner planned. S09b (adjusted recipe), was removed by Sofia on purpose.
 
-## Round 6 — prototype state, contrast, case (11 Sept)
+## Round 6: prototype state, contrast, case (11 Sept)
 
-Today and Recipe detail recalculate through variable modes (no extra frames — S11/S12 kept
+Today and Recipe detail recalculate through variable modes (no extra frames: S11/S12 kept
 disappearing, most likely through Figma undo). Main flow clicked through in the published
 prototype. Contrast fixed and measured on real pixels. The case on the Cover page. Usability
 test plan written; tests not run.
@@ -199,12 +199,12 @@ and the README says plainly that nothing has been tested with users yet.
   *after* resizing, or cards collapse to the resize height.
 - Setting `vectorPaths` normalises the path bounding box to `0,0`; position the vector
   afterwards or it jumps.
-- Figma's `query()` attribute matcher breaks on values containing spaces — use
+- Figma's `query()` attribute matcher breaks on values containing spaces: use
   `[name*=Word]`.
 - Prototype `NAVIGATE` destinations must be top-level frames **on the same page**, and a
   frame cannot navigate to itself.
 - Overlay settings (`overlayPositionType`, background) are read-only in the Plugin API.
-- Binding a paint to a variable resets the paint's `opacity` to 1 — put the alpha in the
+- Binding a paint to a variable resets the paint's `opacity` to 1: put the alpha in the
   variable's value instead.
 - Motion: `get_screenshot` shows only the resting state; verify with `export_video` and
   `ffmpeg` frame extraction.

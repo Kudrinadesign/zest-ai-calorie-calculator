@@ -1,16 +1,16 @@
 # Links
 
-All links open without a Figma account — checked from a fresh browser with no Figma login.
+All links open without a Figma account: checked from a fresh browser with no Figma login.
 
 | What | Link | Access |
 |---|---|---|
-| Figma — branding, design system, screens | [figma.com/design/dKRU4E7vOADUMMyp4EGRbG](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) | ✅ Anyone with the link · can view |
-| Figma — all screens on one canvas | [`04 · Screens & Prototype`](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) | ✅ Anyone with the link · can view |
-| **Story 1 — calories in a dish (photo)** | [prototype, starts on Today](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
-| **Story 1b — calories in a specific product** | [starts on Capture → Barcode / Type it](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=32-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
-| **Story 2 — a recipe that fits me** | [starts on Recipes](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
-| Onboarding — first run | [starts on Welcome](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
-| Video walkthrough (English, 3:54) — all three parts | [AI Calorie Tracking App With Chat Agent (Loom)](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8) | ✅ Anyone with the link |
+| Figma: branding, design system, screens | [figma.com/design/dKRU4E7vOADUMMyp4EGRbG](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) | ✅ Anyone with the link · can view |
+| Figma: all screens on one canvas | [`04 · Screens & Prototype`](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) | ✅ Anyone with the link · can view |
+| **Story 1: calories in a dish (photo)** | [prototype, starts on Today](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| **Story 1b: calories in a specific product** | [starts on Capture → Barcode / Type it](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=32-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| **Story 2: a recipe that fits me** | [starts on Recipes](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| Onboarding: first run | [starts on Welcome](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
+| Video walkthrough (English, 3:54), all three parts | [AI Calorie Tracking App With Chat Agent (Loom)](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8) | ✅ Anyone with the link |
 
 The prototype's flow list (left sidebar in Present mode) holds the three story flows, the
 onboarding flow, and one flow per edge case (`Edge · …`), nine in all.

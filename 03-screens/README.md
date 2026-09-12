@@ -5,20 +5,20 @@ the start point is Welcome.
 
 | File | Screen | Kind | What it is for |
 |---|---|---|---|
-| `00-flow-map.png` | Flow map | — | Every screen, every link, the three kinds and their rules |
+| `00-flow-map.png` | Flow map |  | Every screen, every link, the three kinds and their rules |
 | `01-welcome.png` | Welcome | entry | The promise, in one sentence, plus the mark |
-| `02-today.png` | Today | place | Before breakfast is logged: 1,056 kcal left, and Zest's nudge — "Breakfast isn't logged yet" |
-| `03-capture.png` | Capture | flow | Viewfinder — the plate inside the ring; Photo · Barcode · Type it |
+| `02-today.png` | Today | place | Before breakfast is logged: 1,056 kcal left, and Zest's nudge, "Breakfast isn't logged yet" |
+| `03-capture.png` | Capture | flow | Viewfinder: the plate inside the ring; Photo · Barcode · Type it |
 | `04-analysing.png` | Analysing | flow | Items surface one by one, so the AI's work is legible |
 | `05-result.png` | Result | flow | Total, macros, Zest's observation, every portion editable |
 | `06-add-a-product.png` | Add a product | flow | Search or barcode, with a portion stepper |
 | `07-ask-zest.png` | Ask Zest | place | The assistant does the arithmetic, not the person |
 | `08-recipes.png` | Recipes | place | Ranked by what is still left today |
-| `09-recipe-detail.png` | Recipe detail | detail | Carries **Why this fits you** — the second user story |
+| `09-recipe-detail.png` | Recipe detail | detail | Carries **Why this fits you**: the second user story |
 | `10-history.png` | History | place | Month calendar and what was eaten on the chosen day |
-| `09b-recipe-detail-adjusted.png` | Recipe detail — adjusted | detail | After *Apply adjustment*: ≈ 400 kcal, 30 g protein, 9 g fat, 2 × 100 g salmon — the same frame in its *Adjusted* mode |
-| `11-today-meal-added.png` | Today — meal added | place | After *Add to my day*: the budget moves from 1,056 to 540 kcal left, and a snackbar says so — **Undo** |
-| `12-today-dinner-planned.png` | Today — dinner planned | place | After *Plan for dinner*: planned is not logged — "It logs when you mark it eaten" |
+| `09b-recipe-detail-adjusted.png` | Recipe detail: adjusted | detail | After *Apply adjustment*: ≈ 400 kcal, 30 g protein, 9 g fat, 2 × 100 g salmon, the same frame in its *Adjusted* mode |
+| `11-today-meal-added.png` | Today: meal added | place | After *Add to my day*: the budget moves from 1,056 to 540 kcal left, and a snackbar says so, **Undo** |
+| `12-today-dinner-planned.png` | Today: dinner planned | place | After *Plan for dinner*: planned is not logged, "It logs when you mark it eaten" |
 
 ## How the screens connect
 
@@ -26,7 +26,7 @@ Three kinds of screen, and each kind always behaves the same way.
 
 | Kind | Screens | Top-left | Bottom | Arrives by |
 |---|---|---|---|---|
-| **Place** | Today, Recipes, Zest, History | — | the nav | dissolve, 300 ms |
+| **Place** | Today, Recipes, Zest, History |  | the nav | dissolve, 300 ms |
 | **Detail** | Recipe detail | `‹` one step back | one burgundy button | slides in from the right |
 | **Flow** | Capture → Analysing → Result, Capture → Add a product | `×` leaves without saving | one burgundy button | rises from the bottom |
 

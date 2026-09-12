@@ -1,16 +1,16 @@
-# Zest — AI Calorie Calculator
+# Zest: AI Calorie Calculator
 
 ![Stylescape · Zest](01-branding/stylescape-zest.png)
 
-![Zest — cover](cover.png)
+![Zest: cover](cover.png)
 
 Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
 
-**▶ [Video walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8)** (3:54, English) — branding, the design system and the final designs end to end: Today, the camera and what the AI reads, the result and correcting it, barcode and manual entry, Ask Zest, recipes.
-**Figma:** [file](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) · [all screens on one canvas](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) · [prototype — Story 1, calories in a dish](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
+**▶ [Video walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8)** (3:54, English), branding, the design system and the final designs end to end: Today, the camera and what the AI reads, the result and correcting it, barcode and manual entry, Ask Zest, recipes.
+**Figma:** [file](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) · [all screens on one canvas](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) · [prototype, Story 1, calories in a dish](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
 
-Everything here was produced with Claude Code driving Figma through the Figma MCP —
+Everything here was produced with Claude Code driving Figma through the Figma MCP -
 tokens, components, screens and prototype links are written as code and created as native
 Figma nodes. Nothing was drawn by hand on the canvas.
 
@@ -19,7 +19,7 @@ Figma nodes. Nothing was drawn by hand on the canvas.
 ## The product
 
 **Zest** is a nutrition companion. You photograph a plate; it names what is on it, weighs
-each part, and tells you what that costs your day — then says what to do next.
+each part, and tells you what that costs your day, then says what to do next.
 
 Both user stories from the brief are closed end to end:
 
@@ -37,23 +37,23 @@ Both user stories from the brief are closed end to end:
 
 | | |
 |---|---|
-| **Problem** | Counting calories by hand — search, weigh, type — is slow enough that people stop, and when a day goes over plan, red numbers and "you failed" make them stop faster. |
+| **Problem** | Counting calories by hand (search, weigh, type), is slow enough that people stop, and when a day goes over plan, red numbers and "you failed" make them stop faster. |
 | **Hypothesis** | If logging a meal is one photo and one confirmation, and the app states facts without verdicts, people will log more of their meals and keep logging through days that go over plan. If recipes are ranked by what is left today and say why they fit, people will choose one instead of guessing. |
-| **Role of AI** | It does the tedious part — names what is on the plate, estimates each portion, does the arithmetic against today's targets, suggests what fits next. The person stays in control: every estimate is "≈" and editable, nothing is logged without a tap, and when it is unsure it says how sure it is. |
-| **Success metric** | North star: share of a person's meals logged per active day, at week 4. Supporting: time from camera to confirmed log; corrections per meal (should fall as Zest learns portions); days still logged after an over-budget day; recipe plans per week. These are what the product would be measured on — **not results**; nothing has been tested with users yet. See [`docs/USABILITY-TEST-PLAN.md`](docs/USABILITY-TEST-PLAN.md). |
+| **Role of AI** | It does the tedious part: names what is on the plate, estimates each portion, does the arithmetic against today's targets, suggests what fits next. The person stays in control: every estimate is "≈" and editable, nothing is logged without a tap, and when it is unsure it says how sure it is. |
+| **Success metric** | North star: share of a person's meals logged per active day, at week 4. Supporting: time from camera to confirmed log; corrections per meal (should fall as Zest learns portions); days still logged after an over-budget day; recipe plans per week. These are what the product would be measured on, **not results**; nothing has been tested with users yet. See [`docs/USABILITY-TEST-PLAN.md`](docs/USABILITY-TEST-PLAN.md). |
 
 ---
 
 ## The name
 
-The zest is the thin outer layer of a citrus — the part that holds all the flavour. That
+The zest is the thin outer layer of a citrus: the part that holds all the flavour. That
 is what the product does: it reads the surface (a photograph) and extracts what is inside
 it (the macros). The mark is a round fruit with an open arc, and **the arc is the day's
 remaining budget**, so the logo shows state rather than only identity.
 
 ---
 
-## Visual direction — "Natural light"
+## Visual direction: "Natural light"
 
 The reference points were Milkinside's *Natural OS* work: a screen whose ground is a field
 of out-of-focus light rather than a flat colour, translucent tiles with no borders and no
@@ -69,13 +69,13 @@ from what the person actually ate.** The atmosphere is data, not decoration.
 | Ground | `ground/porcelain` | `#EFE9E1` |
 | Bloom | `bloom/plum` → `bloom/mulberry` → `bloom/ember` → `bloom/amber` | `#4A2238` `#8C3A56` `#E27A52` `#F2B585` |
 | Sampled from food | `bloom/butter` | `#EDD28E` |
-| **Action** — committing button, nav camera | `action/primary` | `#9E2044` burgundy |
+| **Action**: committing button, nav camera | `action/primary` | `#9E2044` burgundy |
 | State (shutter, progress, eaten arc) | `accent/ember` | `#D7650E` |
-| Selection (chip, radio, toggle, today's date) — white text 4.9:1 | `accent/ember-strong` | `#BF540A` |
+| Selection (chip, radio, toggle, today's date): white text 4.9:1 | `accent/ember-strong` | `#BF540A` |
 | Protein · Carbs · Fat | `macro/*` | `#4550D7` `#E6BC6A` `#CE4A34` |
 | Opaque surface (nav, inputs) · suggestion tiles | `surface/raised` · `glass/peach` | `#FFFFFF` · `#F4BFA5` 66 % |
 | Secondary button | `action/secondary` + `action/secondary-edge` | white with an ink 22 % edge |
-| Disabled | `surface/disabled` + `ink/tertiary` | 4.1:1 — readable, though disabled controls are exempt |
+| Disabled | `surface/disabled` + `ink/tertiary` | 4.1:1, readable, though disabled controls are exempt |
 
 **The rule that keeps controls readable:** a control is never the colour of the
 atmosphere. The committing action is burgundy on every screen with no exceptions and the
@@ -100,9 +100,9 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 
 | # | Deliverable | Where |
 |---|---|---|
-| 1 | Branding / stylescapes | Figma page `01 · Branding` — logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
+| 1 | Branding / stylescapes | Figma page `01 · Branding`: logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
 | 2 | Design system | Figma pages `02 · Foundations`, `03 · Components` (overview) and `03.1`–`03.7` (one page per family): 359 variables in 5 collections, 16 text styles, 8 effect styles, 52 components with all their states (42 of them variant sets) and 39 icon components. See [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) and the independent audit [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
-| 3 | Key screens & flows | Figma page `04 · Screens & Prototype` — 10 main screens (with their prototype states) and the **Edge cases** section (9 cases + 2 sub-states), every screen built from design-system instances. Exports in [`03-screens/`](03-screens/) and [`04-edge-cases/`](04-edge-cases/) |
+| 3 | Key screens & flows | Figma page `04 · Screens & Prototype`: 10 main screens (with their prototype states), and the **Edge cases** section (9 cases + 2 sub-states), every screen built from design-system instances. Exports in [`03-screens/`](03-screens/), and [`04-edge-cases/`](04-edge-cases/) |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review, [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md) for the contrast check; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
 
@@ -110,13 +110,13 @@ See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/
 
 | The brief asks for | Status |
 |---|---|
-| Branding / stylescapes | ✅ `01 · Branding` — 1 main collage + 4 supporting stylescapes, exports in [`01-branding/`](01-branding/) |
-| Design system | ✅ 359 variables, 16 text styles, 8 effect styles, 52 components with states (42 variant sets) and 39 icons — [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
+| Branding / stylescapes | ✅ `01 · Branding`: 1 main collage + 4 supporting stylescapes, exports in [`01-branding/`](01-branding/) |
+| Design system | ✅ 359 variables, 16 text styles, 8 effect styles, 52 components with states (42 variant sets), and 39 icons: [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
 | Key screens / key flows, covering both user stories | ✅ Story 1 (dish **and** specific product) and Story 2 (a recipe that fits) are separate flows in the prototype and separate lanes on the flow map |
 | Made with Claude Code, not by hand | ✅ Every token, component, screen and link was written as Plugin API scripts run through the Figma MCP |
 | Everything in a GitHub repository | ✅ this repository |
-| Accessible in incognito | ✅ Figma, the video and this repository — all checked logged out |
-| Video presentation in English showing all three parts | ✅ [Loom walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8) — 3:54, English · script in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
+| Accessible in incognito | ✅ Figma, the video and this repository: all checked logged out |
+| Video presentation in English showing all three parts | ✅ [Loom walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8), 3:54, English · script in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
 
 ### Screens
 
@@ -124,7 +124,7 @@ Every screen is one of three kinds, and each kind always behaves the same way:
 
 | Kind | Screens | Top-left | Bottom | Arrives by |
 |---|---|---|---|---|
-| **Place** | Today, Recipes, Zest, History | — | the nav | dissolve, 300 ms |
+| **Place** | Today, Recipes, Zest, History |  | the nav | dissolve, 300 ms |
 | **Detail** | Recipe detail | `‹` one step back | one burgundy button | slides in from the right |
 | **Flow** | Capture → Analysing → Result, Capture → Add a product | `×` leaves without saving | one burgundy button | rises from the bottom |
 
@@ -145,7 +145,7 @@ Today ──┬── week strip ───────▶ History
 ```
 
 The camera in the nav always opens Capture. Every burgundy button commits something and
-returns to Today, where it lands — and Today says so ("Added to breakfast · 516 kcal · Undo"). Nothing on a screen duplicates a control that already
+returns to Today, where it lands, and Today says so ("Added to breakfast · 516 kcal · Undo"). Nothing on a screen duplicates a control that already
 lives in the navigation.
 
 ### The clickable scenario
@@ -153,7 +153,7 @@ lives in the navigation.
 Present → **Main · log breakfast → plan dinner** (starts on Today). Every step below was
 clicked through in the published prototype, logged out:
 
-1. **Today** — the Budget card's ring shows 1,056 kcal left, with protein 75 / 120, carbs
+1. **Today**: the Budget card's ring shows 1,056 kcal left, with protein 75 / 120, carbs
    172 / 260 and fat 38 / 80 beside it; Zest: *"Breakfast isn't logged yet."* Tap the tile.
 2. **Capture** → pick the breakfast photo from the library → **Analysing** → **Result**
    (Breakfast · 09:12, 516 kcal).
@@ -163,16 +163,16 @@ clicked through in the published prototype, logged out:
    mode, so the ring and the bars move together.)
 4. **Dinners that fit** (scroll Today, or the Recipes tab) → **Recipes** → **Miso salmon** →
    **Apply adjustment**: the recipe
-   recalculates in place — 480 → ≈ 400 kcal, protein 38 → 30 g, fat 14 → 9 g, salmon
+   recalculates in place: 480 → ≈ 400 kcal, protein 38 → 30 g, fat 14 → 9 g, salmon
    2 × 140 → 2 × 100 g. *Back to 140 g* reverses it.
 5. **Plan for dinner** → Today: *"Dinner planned · It logs when you mark it eaten."*
 
 The recalculation is real prototype state, not extra screens: Today and Recipe detail are
-bound to two variable collections (`Prototype · Day` — before / added / after / planned;
-`Prototype · Recipe` — original / adjusted) and the buttons switch their modes. Static
+bound to two variable collections (`Prototype · Day`: before / added / after / planned;
+`Prototype · Recipe`: original / adjusted), and the buttons switch their modes. Static
 exports of each state are in [`03-screens/`](03-screens/).
 
-### Motion — only where the AI is working
+### Motion: only where the AI is working
 
 Motion is reserved for one meaning: *the AI is doing something*. Nothing else on screen
 moves, so when something does, it is always the assistant.
@@ -181,7 +181,7 @@ moves, so when something does, it is always the assistant.
 |---|---|---|
 | Capture | The lens ring breathes (100 → 106 %), its halo swells a beat later, "Plate in view" rises in | It is looking |
 | Analysing | A bead orbits the ring, two turns in 2.2 s; found items surface one by one; the progress bar fills | It is reading, and you can see what it has found so far |
-| Ask Zest | The question, the answer and the next steps arrive in order; in the **What-if card** the pale segment of the ring — the pasta being asked about — breathes | It is answering, and showing the consequence rather than a verdict |
+| Ask Zest | The question, the answer and the next steps arrive in order; in the **What-if card** the pale segment of the ring (the pasta being asked about), breathes | It is answering, and showing the consequence rather than a verdict |
 | Today · Result · Recipe detail · sheets | The Zest orb breathes (its *Thinking* state carries the keyframes, so every instance inherits them) | This line was written by the assistant |
 
 Built with Figma Motion keyframes and checked frame by frame from a rendered video.
@@ -213,7 +213,7 @@ Each case keeps the rules: fact first, no verdicts, one way forward, nothing los
 
   Every variable has a scope and code syntax.
 - **16 text styles and 8 effect styles,** all bound to variables.
-- **52 components with all their states** — 42 of them variant sets — **and 39 icon components,** e.g.:
+- **52 components with all their states** (42 of them variant sets), **and 39 icon components,** e.g.:
   - Button, Ghost button, Icon button, Chip, Toggle, Radio, Segmented control;
   - Search field, Stepper, Composer;
   - Nav bar (leading / trailing icon), Tab bar, Day / Week strip, Calendar day;
@@ -232,12 +232,12 @@ Three rules, and they are structural rather than stylistic:
 1. **Fact first, opinion second.** The number always precedes the advice.
 2. **Address, then offer.** Name the person, state the observation, propose the next step.
    Never issue a verdict.
-3. **Food is never bad — distribution is.** Banned: *should, bad, cheat, guilty, failed.*
+3. **Food is never bad: distribution is.** Banned: *should, bad, cheat, guilty, failed.*
 
 Rule 3 has a visible consequence: **there is no error red anywhere in the nutrition data.**
 Going over a target is stated as a fact in the brand's own clay tone.
 
-> "Breakfast is 41% of today's fat — 33 g of 80 g.
+> "Breakfast is 41% of today's fat: 33 g of 80 g.
 > Lean protein at lunch keeps the rest of the day easy."
 
 ---
@@ -246,7 +246,7 @@ Going over a target is stated as a fact in the brand's own clay tone.
 
 All photographs are **CC0**, from the Unsplash archive on Wikimedia Commons.
 - **Capture flow:** a real user photographs from above with the whole dish in view, so every photo is top-down, with the dish centred inside the scanner ring. That's also what a calorie estimate needs.
-- **Recipes:** these photos are editorial, so angled shots are fine there. Credits — not required by CC0, but given —
+- **Recipes:** these photos are editorial, so angled shots are fine there. Credits, not required by CC0, but given -
 are in [`01-branding/PHOTO-CREDITS.md`](01-branding/PHOTO-CREDITS.md).
 
 ---
@@ -257,7 +257,7 @@ are in [`01-branding/PHOTO-CREDITS.md`](01-branding/PHOTO-CREDITS.md).
 2. Agreed the brand platform and the visual direction in conversation.
 3. Wrote the tokens, type ramp, components, screens and prototype links as Figma Plugin API
    scripts, executed through the Figma MCP.
-4. Verified every step with a rendered screenshot before continuing — several layout bugs
+4. Verified every step with a rendered screenshot before continuing: several layout bugs
    (collapsed auto-layout heights, a photo fading to a flat band, drifted top bars) were
    found this way rather than by eye at the end.
 

@@ -1,4 +1,4 @@
-# Design-system audit — 12 September 2026
+# Design-system audit: 12 September 2026
 
 **What this is.** After the screens were rebuilt from components, a **separate Claude agent**
 audited the file read-only, with no knowledge of how it was made, against one question: *does
@@ -6,7 +6,7 @@ every value on every mockup come from the design system, or is something typed i
 
 It checked, per node: fills, strokes, gradient stops, text styles, padding and gap, corner
 radius, stroke weight, effects, layer opacity, hand-drawn copies of components, and detached or
-missing instances — across the 10 main screens, the 11 edge-case frames and the 7 component
+missing instances: across the 10 main screens, the 11 edge-case frames and the 7 component
 pages.
 
 ## Verdict
@@ -28,11 +28,11 @@ the variable's own alpha on all 261 semi-transparent paints, so it is not an ove
 | Four hand-typed text shadows over photos (Capture, E03, E03b, E05b) | Applied the **Shadow/Text on photo** effect style, which holds exactly those values |
 | The orbiting bead's glow was typed in | Applied the **Glow/AI** style |
 | "Zest" in the Welcome logo had a raw white override | Bound to `onbloom/primary` |
-| The Analysing sheet used `ai/sphere-highlight` as its fill, `radius/tile-lg`, and `space/20` on top | Now `surface/raised`, `radius/sheet`, `space/12` — the same tokens the Bottom sheet component uses |
+| The Analysing sheet used `ai/sphere-highlight` as its fill, `radius/tile-lg`, and `space/20` on top | Now `surface/raised`, `radius/sheet`, `space/12`: the same tokens the Bottom sheet component uses |
 | Calendar day bars had a raw 8 px right padding | Bound to `space/8` |
 | Status bar wifi and battery strokes were raw (1.5 / 1) | Bound to `stroke/control` and `stroke/hairline` |
 | A hidden, hand-drawn "back" control left over on History | Removed |
-| Primitives were not hidden from publishing | `hiddenFromPublishing = true` — raw values can't be picked by anyone consuming the library |
+| Primitives were not hidden from publishing | `hiddenFromPublishing = true`: raw values can't be picked by anyone consuming the library |
 | Macro stat bars stopped short of the numbers (also reported by Sofia) | The bar now fills the row, and every bar's length is derived from its own value ("96 / 120 g" → 80 %) |
 
 ## Deliberately left, and why
@@ -57,7 +57,7 @@ the variable's own alpha on all 261 semi-transparent paints, so it is not an ove
 
 ## Token hygiene
 
-Duplicate values are mostly intentional aliases — `action/capture` = `action/primary` (the
+Duplicate values are mostly intentional aliases: `action/capture` = `action/primary` (the
 camera commits), `line/focus` = `accent/ember-strong` (focus uses the selection colour),
 `line/error` = `action/danger`. They exist so the role can change independently later.
 
