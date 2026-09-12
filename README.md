@@ -110,7 +110,7 @@ status bar at 0, navigation at 59, bottom bar 24 from the edge.
 | # | Deliverable | Where |
 |---|---|---|
 | 1 | Branding / stylescapes | Figma page `01 · Branding`: logo exploration, the main stylescape **Stylescape · Zest** (a dense collage built on one idea: the plate, the lens, the orb and the day are all circles), and four supporting 4000 × 1000 stylescapes: **Where it comes from** (the sources: peel, light, colours sampled from a real plate, photography), **Natural light** (the brand), **The plate is data** (the product), **No verdicts** (the voice). Exports in [`01-branding/`](01-branding/) |
-| 2 | Design system | Figma pages `02 · Foundations`, `03 · Components` (overview) and `03.1`–`03.7` (one page per family): 359 variables in 5 collections, 16 text styles, 8 effect styles, 52 components with all their states (42 of them variant sets) and 39 icon components. See [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) and the independent audit [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
+| 2 | Design system | Figma pages `02 · Foundations`, `03 · Components` (overview) and `03.1`–`03.7` (one page per family): 330 variables in 5 collections, 16 text styles, 8 effect styles, 52 components with all their states (42 of them variant sets) and 39 icon components. See [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) and the independent audit [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
 | 3 | Key screens & flows | Figma page `04 · Screens & Prototype`: 10 main screens (with their prototype states), and the **Edge cases** section (9 cases + 2 sub-states), every screen built from design-system instances. Exports in [`03-screens/`](03-screens/), and [`04-edge-cases/`](04-edge-cases/) |
 
 See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/REVIEW-FIXES.md`](docs/REVIEW-FIXES.md) for what changed after review, [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md) for the contrast check; the video script is in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
@@ -120,7 +120,7 @@ See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/
 | The brief asks for | Status |
 |---|---|
 | Branding / stylescapes | ✅ `01 · Branding`: 1 main collage + 4 supporting stylescapes, exports in [`01-branding/`](01-branding/) |
-| Design system | ✅ 359 variables, 16 text styles, 8 effect styles, 52 components with states (42 variant sets), and 39 icons: [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
+| Design system | ✅ 330 variables, 16 text styles, 8 effect styles, 52 components with states (42 variant sets), and 39 icons: [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md), audited independently in [`docs/DS-AUDIT.md`](docs/DS-AUDIT.md) |
 | Key screens / key flows, covering both user stories | ✅ Story 1 (dish **and** specific product) and Story 2 (a recipe that fits) are separate flows in the prototype and separate lanes on the flow map |
 | Made with Claude Code, not by hand | ✅ Every token, component, screen and link was written as Plugin API scripts run through the Figma MCP |
 | Everything in a GitHub repository | ✅ this repository |
@@ -215,7 +215,7 @@ Each case keeps the rules: fact first, no verdicts, one way forward, nothing los
 
 ### Design system
 
-- **359 variables in 5 collections:**
+- **330 variables in 5 collections:**
   - Primitives (hidden) → semantic Zest · Natural;
   - Typography;
   - Prototype · Day and Prototype · Recipe for app state.

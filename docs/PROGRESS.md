@@ -19,7 +19,7 @@ conversation.
 
 ## Round 7: design system, rebuild, audit (11–12 Sept)
 
-- **Design system built properly:** 359 variables in 5 collections (Primitives → semantic,
+- **Design system built properly:** 330 variables in 5 collections (Primitives → semantic,
   Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
   variables, 52 components with Default / Pressed / Disabled / Selected / Loading states wired
   as interactive components.
@@ -52,7 +52,7 @@ not the same thing and does not pretend to be.
 - **The whole design moved to a new Figma file**: `dKRU4E7vOADUMMyp4EGRbG`. The old file
   was duplicated and then deleted, so nobody who had its link can reach the work any more.
   The duplicate keeps every node ID, so only the file key changed in the links. Verified
-  against the original: 359 variables in 5 collections, 16 text and 8 effect styles,
+  against the original: 330 variables in 5 collections, 16 text and 8 effect styles,
   42 component sets + 49 single components, 13 pages, 10 screens, 11 edge cases,
   13 prototype flows, 13 image fills.
 
