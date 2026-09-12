@@ -1,8 +1,8 @@
 # Zest — AI Calorie Calculator
 
-![Zest — cover](cover.png)
-
 ![Stylescape · Zest](01-branding/stylescape-zest.png)
+
+![Zest — cover](cover.png)
 
 Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
