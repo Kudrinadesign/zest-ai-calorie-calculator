@@ -4,13 +4,13 @@
 |---|---|---|
 | `components.png` | 03 · Components | Overview: how tokens, components and state fit together, and an index of the family pages |
 | `foundations.png` | 02 · Foundations | Colour, the bloom, typography, spacing and radius, token architecture, sizes and strokes, effects |
-| `03.1-icons.png` | 03.1 · Icons | 39 Lucide icons as components (stroke and colour from variables) |
-| `03.2-actions.png` | 03.2 · Actions | Button, Ghost button, Icon button, Chip, Shutter & Library, with every state |
-| `03.3-inputs-and-selection.png` | 03.3 · Inputs & selection | Toggle, Radio, Step indicator, Segmented control, Stepper, Search field, Composer |
-| `03.4-navigation.png` | 03.4 · Navigation | Status bar, Nav bar, Tab bar, Day / Week strip, Calendar day |
-| `03.5-data-display.png` | 03.5 · Data display | Macro bar, Macro stat, Tag, Bullet, Badge / Tile head, Day ring, list rows |
-| `03.6-cards-and-surfaces.png` | 03.6 · Cards & surfaces | Budget card, Today tiles, Recipe card, Snackbar, Bottom sheet, Notice card |
-| `03.7-feedback-and-ai.png` | 03.7 · Feedback & AI | Zest orb, Insight card, Chat bubble, Status pill, Lens, What-if card |
+| `03.1-icons.png` | Icons | 39 Lucide icons as components (stroke and colour from variables) |
+| `03.2-actions.png` | Actions | Button, Ghost button, Icon button, Chip, Shutter & Library, with every state |
+| `03.3-inputs-and-selection.png` | Inputs & selection | Toggle, Radio, Step indicator, Segmented control, Stepper, Search field, Composer |
+| `03.4-navigation.png` | Navigation | Status bar, Nav bar, Tab bar, Day / Week strip, Calendar day |
+| `03.5-data-display.png` | Data display | Macro bar, Macro stat, Tag, Bullet, Badge / Tile head, Day ring, list rows |
+| `03.6-cards-and-surfaces.png` | Cards & surfaces | Budget card, Today tiles, Recipe card, Snackbar, Bottom sheet, Notice card |
+| `03.7-feedback-and-ai.png` | Feedback & AI | Zest orb, Insight card, Chat bubble, Status pill, Lens, What-if card |
 
 The full reference is in [`docs/DESIGN-SYSTEM.md`](../docs/DESIGN-SYSTEM.md). The totals:
 - 330 variables in 5 collections (Primitives → semantic, Typography, two Prototype collections);

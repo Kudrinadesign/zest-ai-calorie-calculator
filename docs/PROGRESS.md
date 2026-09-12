@@ -13,7 +13,7 @@ conversation.
 | `01 · Branding` | logo exploration (3 marks) + main collage **Stylescape · Zest** + four supporting stylescapes 4000 × 1000 (Where it comes from · Natural light · The plate is data · No verdicts) |
 | `02 · Foundations` | colour, bloom, type, spacing, radius + token architecture, sizes & strokes, effects, extra text styles |
 | `03 · Components` | overview: token layers, state management, index of the family pages, Logo |
-| `03.1 – 03.7` | 91 component nodes with all states (39 icons, 42 variant sets, 10 single), Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
+| `03 · Components` | 91 component nodes with all states (39 icons, 42 variant sets, 10 single) on one canvas: Icons · Actions · Inputs & selection · Navigation · Data display · Cards & surfaces · Feedback & AI |
 | `04 · Screens & Prototype` | 10 screens (built from instances) + **Edge cases** section (9 cases + E03b, E05b); 13 prototype flows named after the brief's user stories |
 | `05 · Flow map` | rebuilt around the two user stories: Story 1 (dish / product), Story 2 (recipe), supporting |
 
@@ -53,7 +53,7 @@ not the same thing and does not pretend to be.
   was duplicated and then deleted, so nobody who had its link can reach the work any more.
   The duplicate keeps every node ID, so only the file key changed in the links. Verified
   against the original: 330 variables in 5 collections, 16 text and 8 effect styles,
-  42 component sets + 49 single components, 13 pages, 10 screens, 11 edge cases,
+  42 component sets + 49 single components, 6 pages, 10 screens, 11 edge cases,
   13 prototype flows, 13 image fills.
 
 ## Screens

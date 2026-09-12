@@ -2,7 +2,7 @@
 
 Every screen in the Figma file is assembled from the components below, and every colour,
 size, gap, radius, stroke, blur, opacity and type setting on them comes from a variable or a
-style bound to variables. Pages `03 · Components` (overview) and `03.1`–`03.7` (one page per
+style bound to variables. Page `03 · Components` holds the whole library on one canvas (37 sections grouped by
 family) document each component with its states, tokens and usage.
 
 ## Tokens: 5 collections, 330 variables
@@ -26,13 +26,13 @@ prototype variables can't carry scopes: a Figma limitation.
 
 | Page | Components (variants) |
 |---|---|
-| 03.1 Icons | 39 Lucide icons (ISC) on a 24 px grid; stroke `stroke/icon`, colour `icon/*`. Used through an instance-swap property everywhere. |
-| 03.2 Actions | **Button** (24: Primary/Secondary × Large/Medium/Small × Default/Pressed/Disabled/Loading) · **Ghost button** (18: Brand/Accent/Ink/Danger/On photo/Highlight × 3 states) · **Icon button** (26: Light/Tinted/Filled/Glass × Regular/Small × Default/Pressed/Selected/Disabled) · **Chip** (9: Filter/Suggestion × Selected × states) · **Capture control** (Shutter/Library × 3) |
-| 03.3 Inputs & selection | Toggle (4) · Radio (4) · Step indicator (3) · Segment (6) + Segmented control (2) · Stepper (2) · **Search field** (5: Empty/Focused/Filled/Error/Disabled, leading + trailing icon) · Composer (3) |
-| 03.4 Navigation | Status bar (2) · **Nav bar** (leading icon · title · trailing icon; On photo/On bloom) · Tab item (12) + **Tab bar** (5) · **Day** (4) + Week strip · **Calendar day** (5) |
-| 03.5 Data display | Macro bar (10: 5 macros × Solid/Added) · Macro stat (12: Card/Inline/Compact/What-if × 3) · Tag (3) · Bullet (2) · Badge (2) · Tile head (3) · **Day ring** (6) · Food line · Detected item · Product row · Option row · Ingredient row · Meal row |
-| 03.6 Cards & surfaces | **Budget card** (Empty/Before/After/Over) · Last meal tile · Zest tile · Dinners tile · Recipe card · Snackbar · **Bottom sheet** (+ 4 swappable contents) · Notice card |
-| 03.7 Feedback & AI | **Zest orb** (Small/Nav/Medium/Large × Idle/Thinking) · Insight card · Chat bubble · Status pill · **Lens** (Framing/Reading/Unsure/Dim) · **What-if card** |
+| Icons | 39 Lucide icons (ISC) on a 24 px grid; stroke `stroke/icon`, colour `icon/*`. Used through an instance-swap property everywhere. |
+| Actions | **Button** (24: Primary/Secondary × Large/Medium/Small × Default/Pressed/Disabled/Loading) · **Ghost button** (18: Brand/Accent/Ink/Danger/On photo/Highlight × 3 states) · **Icon button** (26: Light/Tinted/Filled/Glass × Regular/Small × Default/Pressed/Selected/Disabled) · **Chip** (9: Filter/Suggestion × Selected × states) · **Capture control** (Shutter/Library × 3) |
+| Inputs & selection | Toggle (4) · Radio (4) · Step indicator (3) · Segment (6) + Segmented control (2) · Stepper (2) · **Search field** (5: Empty/Focused/Filled/Error/Disabled, leading + trailing icon) · Composer (3) |
+| Navigation | Status bar (2) · **Nav bar** (leading icon · title · trailing icon; On photo/On bloom) · Tab item (12) + **Tab bar** (5) · **Day** (4) + Week strip · **Calendar day** (5) |
+| Data display | Macro bar (10: 5 macros × Solid/Added) · Macro stat (12: Card/Inline/Compact/What-if × 3) · Tag (3) · Bullet (2) · Badge (2) · Tile head (3) · **Day ring** (6) · Food line · Detected item · Product row · Option row · Ingredient row · Meal row |
+| Cards & surfaces | **Budget card** (Empty/Before/After/Over) · Last meal tile · Zest tile · Dinners tile · Recipe card · Snackbar · **Bottom sheet** (+ 4 swappable contents) · Notice card |
+| Feedback & AI | **Zest orb** (Small/Nav/Medium/Large × Idle/Thinking) · Insight card · Chat bubble · Status pill · **Lens** (Framing/Reading/Unsure/Dim) · **What-if card** |
 
 ## State management
 
