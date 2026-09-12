@@ -1,13 +1,11 @@
 # Cognitive walkthrough: 11 September 2026
 
-**What this is:** an expert walkthrough of the seven tasks in
-[`USABILITY-TEST-PLAN.md`](USABILITY-TEST-PLAN.md), done by Claude in the published
-prototype, in a browser with no Figma login, clicking every step.
+**What this is:** an expert walkthrough of the seven core tasks, done by Claude in the
+published prototype, in a browser with no Figma login, clicking every step.
 
-**What this is not:** a usability test. No participants took part; there are no success
-rates, times or quotes. It predicts where a first-time user *could* struggle, so the real
-sessions can check those points. The results table in the test plan stays empty until
-real people have used the prototype.
+**What this is not:** a test with people. No participants took part; there are no success
+rates, times or quotes. It predicts where a first-time user *could* struggle, and nothing
+here is presented as a finding about real users.
 
 For each step the method asks four questions: *Will they try to do the right thing? Will
 they notice the control? Will they connect it with their goal? Will they see that it

@@ -42,7 +42,7 @@ Both user stories from the brief are closed end to end:
 | **Problem** | Counting calories by hand (search, weigh, type), is slow enough that people stop, and when a day goes over plan, red numbers and "you failed" make them stop faster. |
 | **Hypothesis** | If logging a meal is one photo and one confirmation, and the app states facts without verdicts, people will log more of their meals and keep logging through days that go over plan. If recipes are ranked by what is left today and say why they fit, people will choose one instead of guessing. |
 | **Role of AI** | It does the tedious part: names what is on the plate, estimates each portion, does the arithmetic against today's targets, suggests what fits next. The person stays in control: every estimate is "≈" and editable, nothing is logged without a tap, and when it is unsure it says how sure it is. |
-| **Success metric** | North star: share of a person's meals logged per active day, at week 4. Supporting: time from camera to confirmed log; corrections per meal (should fall as Zest learns portions); days still logged after an over-budget day; recipe plans per week. These are what the product would be measured on, **not results**; nothing has been tested with users yet. See [`docs/USABILITY-TEST-PLAN.md`](docs/USABILITY-TEST-PLAN.md). |
+| **Success metric** | North star: share of a person's meals logged per active day, at week 4. Supporting: time from camera to confirmed log; corrections per meal (should fall as Zest learns portions); days still logged after an over-budget day; recipe plans per week. These are what the product would be measured on, **not results**; nothing has been tested with users yet. |
 
 ---
 

@@ -37,9 +37,10 @@ conversation.
 
 ### Not done, on purpose
 
-Usability sessions were not run. The plan and the session page are ready
-(`docs/USABILITY-TEST-PLAN.md`) and the success metrics are defined, but no findings are
-claimed anywhere: inventing them would be worse than leaving the gap visible.
+Nothing was tested with people, and no findings are claimed anywhere. The success
+metrics are named in the README so it is clear what the product would be measured on;
+`docs/COGNITIVE-WALKTHROUGH.md` predicts where a first-time user could struggle, which is
+not the same thing and does not pretend to be.
 
 ## Round 8: delivery and the move to a clean file (12 Sept)
 
@@ -166,8 +167,7 @@ days, Today: dinner planned. S09b (adjusted recipe), was removed by Sofia on pur
 
 Today and Recipe detail recalculate through variable modes (no extra frames: S11/S12 kept
 disappearing, most likely through Figma undo). Main flow clicked through in the published
-prototype. Contrast fixed and measured on real pixels. The case on the Cover page. Usability
-test plan written; tests not run.
+prototype. Contrast fixed and measured on real pixels. The case on the Cover page.
 
 ## Delivery
 
@@ -175,8 +175,8 @@ Done: the Figma file is shared as "Anyone with the link · can view"; the reposi
 public; the video walkthrough is recorded and linked. Every link in `links.md` was opened
 from a browser with no Figma, GitHub or Loom login.
 
-Not done, deliberately: the usability sessions. The plan exists, the metrics are named,
-and the README says plainly that nothing has been tested with users yet.
+Not done, deliberately: testing with people. The README says plainly that nothing has
+been tested with users yet.
 
 ## Decisions worth defending on video
 

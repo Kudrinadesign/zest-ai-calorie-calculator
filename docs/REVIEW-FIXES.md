@@ -72,4 +72,4 @@ The reviewer confirmed the fixes above and listed what was still open. All of it
 | A clickable main scenario | New flow **Main · log breakfast → plan dinner**. Every link was checked two ways: a graph walk over all prototype reactions (no broken links; all ten screens reachable from Welcome) and a real click-through of the published prototype in a logged-out browser. |
 | Sticky buttons and contrast | See [`ACCESSIBILITY.md`](ACCESSIBILITY.md): three token fixes, three text-on-bloom fixes measured on real pixels, 44 px round controls. |
 | Problem, hypothesis, role of AI, success metric | README *The case* and a **The case** frame on the Cover page. |
-| 3–5 real usability tests | Not possible from here; I can't recruit or observe people, and I won't invent results. [`USABILITY-TEST-PLAN.md`](USABILITY-TEST-PLAN.md), has the script, seven tasks with success criteria, what to note and an empty results table. |
+| 3–5 real usability tests | Not done. I can't recruit or observe people, and I won't invent results. [`COGNITIVE-WALKTHROUGH.md`](COGNITIVE-WALKTHROUGH.md) predicts where a first-time user could struggle, without claiming anything about real users. |
