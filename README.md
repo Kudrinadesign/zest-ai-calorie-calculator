@@ -2,6 +2,8 @@
 
 **Kudrina Design** · UX/UI trainee test task for Jito, September 2026
 
+### ▸ [Open all ten screens and the edge cases in Figma](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5)
+
 ![Stylescape · Zest](01-branding/stylescape-zest.png)
 
 ![Zest: cover](cover.png)
@@ -10,7 +12,7 @@ Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
 
 **▶ [Video walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8)** (3:54, English), branding, the design system and the final designs end to end: Today, the camera and what the AI reads, the result and correcting it, barcode and manual entry, Ask Zest, recipes.
-**Figma:** [file](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) · [all screens on one canvas](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=27-5) · [prototype, Story 1, calories in a dish](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
+**Figma:** [file](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=234-243) · [prototype, Story 1, calories in a dish](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
 
 Everything here was produced with Claude Code driving Figma through the Figma MCP -
 tokens, components, screens and prototype links are written as code and created as native
