@@ -37,12 +37,21 @@ conversation.
 
 ### Still to do
 
-1. **Video walkthrough** (English, showing branding, design system and final designs) — the
-   brief requires it; not recorded.
-2. **Publish the GitHub repo** and check every link in incognito — not published yet, on Sofia's
-   instruction.
-3. Refresh the Cover and "The case" thumbnails, which still show pre-rebuild screens.
-4. Real usability sessions (the plan and the session page are ready; no results invented).
+1. Real usability sessions (the plan and the session page are ready; no results invented).
+
+## Round 8 — delivery and the move to a clean file (12 Sept)
+
+- **Video walkthrough recorded** and linked from the README and `links.md`.
+- **Repository published** at `cona16860-boop/zest-ai-calorie-calculator`, public; README,
+  raw assets, the Figma file, the four prototype links and the video all checked from a
+  browser with no login.
+- **Cover and "The case" rebuilt** from the current screens.
+- **The whole design moved to a new Figma file** — `dKRU4E7vOADUMMyp4EGRbG`. The old file
+  was duplicated and then deleted, so nobody who had its link can reach the work any more.
+  The duplicate keeps every node ID, so only the file key changed in the links. Verified
+  against the original: 359 variables in 5 collections, 16 text and 8 effect styles,
+  42 component sets + 49 single components, 13 pages, 10 screens, 11 edge cases,
+  13 prototype flows, 13 image fills.
 
 ## Screens
 
@@ -158,15 +167,14 @@ disappearing, most likely through Figma undo). Main flow clicked through in the 
 prototype. Contrast fixed and measured on real pixels. The case on the Cover page. Usability
 test plan written; tests not run.
 
-## Still to do
+## Delivery
 
-Figma file shared as "Anyone with the link · can view" and renamed to `project`; file and
-prototype links in `links.md`, both checked from a browser with no Figma login.
+Done: the Figma file is shared as "Anyone with the link · can view"; the repository is
+public; the video walkthrough is recorded and linked. Every link in `links.md` was opened
+from a browser with no Figma, GitHub or Loom login.
 
-
-1. Push to a public GitHub repository, verify from incognito
-2. Run 3–5 usability sessions with `docs/USABILITY-TEST-PLAN.md` and fill in the results
-3. Video walkthrough covering all three deliverables (script in `docs/VIDEO-SCRIPT.md`)
+Open: run 3–5 usability sessions with `docs/USABILITY-TEST-PLAN.md` and fill in the
+results. Nothing is invented until they happen.
 
 ## Decisions worth defending on video
 
