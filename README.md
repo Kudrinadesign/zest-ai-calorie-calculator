@@ -7,8 +7,8 @@
 Test task for the UX/UI Trainee Designer role at Jito.
 Brief: [jito-dev/trainee-designer-apr-2026-test-task](https://github.com/jito-dev/trainee-designer-apr-2026-test-task) (branch `develop`).
 
-**▶ [Video walkthrough](https://www.loom.com/share/d5620a393db44680b98bd9c146e396bc)** — branding, design system and the final designs.
-**Figma:** [file](https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/project?node-id=48-63) · [prototype — Story 1, calories in a dish](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/mak5NZxh6OuT55iBLTpGD1/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
+**▶ [Video walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8)** — branding, design system and the final designs.
+**Figma:** [file](https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/project?node-id=48-63) · [prototype — Story 1, calories in a dish](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=28-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A2&page-id=27%3A5&show-proto-sidebar=1) · [Story 2, a recipe that fits](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) · all links in [`links.md`](links.md).
 
 Everything here was produced with Claude Code driving Figma through the Figma MCP —
 tokens, components, screens and prototype links are written as code and created as native
@@ -116,7 +116,7 @@ See [`links.md`](links.md) for the Figma link and the video walkthrough, [`docs/
 | Made with Claude Code, not by hand | ✅ Every token, component, screen and link was written as Plugin API scripts run through the Figma MCP |
 | Everything in a GitHub repository | ✅ this repository |
 | Accessible in incognito | ✅ Figma, the video and this repository — all checked logged out |
-| Video presentation in English showing all three parts | ✅ [Loom walkthrough](https://www.loom.com/share/d5620a393db44680b98bd9c146e396bc) · script in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
+| Video presentation in English showing all three parts | ✅ [Loom walkthrough](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8) · script in [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) |
 
 ### Screens
 

@@ -5,7 +5,7 @@ conversation.
 
 ## Figma file
 
-`https://www.figma.com/design/mak5NZxh6OuT55iBLTpGD1/` — file key `mak5NZxh6OuT55iBLTpGD1`
+`https://www.figma.com/design/dKRU4E7vOADUMMyp4EGRbG/` — file key `dKRU4E7vOADUMMyp4EGRbG`
 
 | Page | State |
 |---|---|
