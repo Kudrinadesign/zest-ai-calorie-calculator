@@ -1,6 +1,6 @@
 # Key screens
 
-Exported from Figma at 390 × 844 (iPhone 14/15). States 09b, 11 and 12 are the same frames in other variable modes (no extra screens). All are connected in the prototype;
+Exported from Figma at 390 × 844 (iPhone 14/15). 09b, 11 and 12 are alternative states of the same frames, kept here as exports. All screens are connected in the prototype;
 the start point is Welcome.
 
 | File | Screen | Kind | What it is for |

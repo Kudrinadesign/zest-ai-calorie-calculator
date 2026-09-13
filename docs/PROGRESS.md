@@ -19,7 +19,7 @@ conversation.
 
 ## Round 7: design system, rebuild, audit (11–12 Sept)
 
-- **Design system built properly:** 330 variables in 5 collections (Primitives → semantic,
+- **Design system built properly:** 305 variables in 3 collections (Primitives → semantic,
   Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
   variables, 52 components with Default / Pressed / Disabled / Selected / Loading states wired
   as interactive components.
@@ -52,7 +52,7 @@ not the same thing and does not pretend to be.
 - **The whole design moved to a new Figma file**: `dKRU4E7vOADUMMyp4EGRbG`. The old file
   was duplicated and then deleted, so nobody who had its link can reach the work any more.
   The duplicate keeps every node ID, so only the file key changed in the links. Verified
-  against the original: 330 variables in 5 collections, 16 text and 8 effect styles,
+  against the original: 305 variables in 3 collections, 16 text and 8 effect styles,
   42 component sets + 49 single components, 6 pages, 10 screens, 11 edge cases,
   13 prototype flows, 13 image fills.
 
@@ -165,9 +165,7 @@ days, Today: dinner planned. S09b (adjusted recipe), was removed by Sofia on pur
 
 ## Round 6: prototype state, contrast, case (11 Sept)
 
-Today and Recipe detail recalculate through variable modes (no extra frames: S11/S12 kept
-disappearing, most likely through Figma undo). Main flow clicked through in the published
-prototype. Contrast fixed and measured on real pixels. The case on the Cover page.
+Main flow clicked through in the published prototype. Contrast fixed and measured on real pixels. The case on the Cover page.
 
 ## Delivery
 

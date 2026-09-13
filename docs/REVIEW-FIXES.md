@@ -67,8 +67,8 @@ The reviewer confirmed the fixes above and listed what was still open. All of it
 
 | Asked for | Done |
 |---|---|
-| *Apply adjustment* with automatic recalculation | Recipe detail is bound to a `Prototype · Recipe` variable collection. *Apply adjustment · −5 g fat* switches it to *Adjusted*: kcal, the three reasons, protein, fat, both bars and the salmon amount change in place; *Back to 140 g* switches back. |
-| Updated Today after *Add to my day*, with Undo | Today is bound to `Prototype · Day` (before / breakfast added / after / dinner planned). *Add to my day* switches the mode and navigates; the budget, macros, bars, protein-to-go and Zest's line recalculate and the snackbar appears. *Undo* restores the before state. |
+| *Apply adjustment* with automatic recalculation | The adjusted recipe is a separate export, `03-screens/09b-recipe-detail-adjusted.png`: ≈ 400 kcal, protein 30 g, fat 9 g, salmon 2 × 100 g. |
+| Updated Today after *Add to my day* | The day with the meal logged is a separate export, `03-screens/11-today-meal-added.png`: 540 kcal left, macros and bars moved. |
 | A clickable main scenario | New flow **Main · log breakfast → plan dinner**. Every link was checked two ways: a graph walk over all prototype reactions (no broken links; all ten screens reachable from Welcome) and a real click-through of the published prototype in a logged-out browser. |
 | Sticky buttons and contrast | See [`ACCESSIBILITY.md`](ACCESSIBILITY.md): three token fixes, three text-on-bloom fixes measured on real pixels, 44 px round controls. |
 | Problem, hypothesis, role of AI, success metric | README *The case* and a **The case** frame on the Cover page. |

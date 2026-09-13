@@ -17,10 +17,10 @@ worked?*
 |---|---|---|---|
 | 1 | Log this morning's breakfast from a photo | ✅ Today → Capture → library → Analysing → Result | The Zest tile ("Add it from your photos"), has **no tap affordance**: "Dinners that fit" next to it has a chevron, this doesn't. On Capture the **library thumbnail is unlabeled** (46 px, bottom-left); someone looking for "this morning's photo" may press the shutter instead. |
 | 2 | Is Zest sure? What if a line is wrong? | ✅ Any found line → correction sheet (E08), incl. the half-veiled one | "estimated" and "≈" are visible. "Tap a line to adjust" is an 11 px caption and the rows have **no edit affordance** (no chevron or pencil), so the fix depends on reading the caption. |
-| 3 | Add it: what changed? | ✅ Today recalculates 1,056 → 540, macros, bars, Zest's line; snackbar | Clear. The changed numbers are not highlighted; the snackbar's second line ("540 kcal left of 2,400"), carries the change. The snackbar covers the bottom of the "Dinners that fit" tile until dismissed. |
-| 4 | Take it back | ✅ Undo → 1,056 | Clear: Undo is the only amber text on a dark bar. |
+| 3 | Add it: what changed? | ✅ Add to my day returns to Today; the logged day is a separate export | Clear. The changed numbers are not highlighted; the snackbar's second line ("540 kcal left of 2,400"), carries the change. The snackbar covers the bottom of the "Dinners that fit" tile until dismissed. |
+| 4 | Take it back | ⚠️ Undo sits on the snackbar in the export, but the prototype does not carry the logged state | The affordance reads clearly; it is not clickable in the prototype. |
 | 5 | Find a dinner that fits | ✅ Dinners that fit / nav → Recipes → Recipe detail | Clear. |
-| 6 | Anything to know? Can you act on it? | ✅ Apply adjustment recalculates in place; Back to 140 g | The trade-off is a two-line 13 px sentence; the button label ("−5 g fat") carries the point if the sentence is skimmed. |
+| 6 | Anything to know? Can you act on it? | ✅ Apply adjustment is shown as a separate export | The trade-off is a two-line 13 px sentence; the button label ("−5 g fat") carries the point if the sentence is skimmed. |
 | 7 | Plan it: is it counted yet? | ✅ Plan for dinner → "Dinner planned · It logs when you mark it eaten" | Once the snackbar is gone, **Today shows no trace of the plan**: nothing to check when someone asks "is it counted?" later. After *Apply adjustment*, nothing says which version (480 or ≈ 400 kcal), was planned. |
 
 ## Predicted issues, by severity

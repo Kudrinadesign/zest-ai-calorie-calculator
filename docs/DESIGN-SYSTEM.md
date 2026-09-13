@@ -5,18 +5,15 @@ size, gap, radius, stroke, blur, opacity and type setting on them comes from a v
 style bound to variables. Page `03 · Components` holds the whole library on one canvas (37 sections grouped by
 family) document each component with its states, tokens and usage.
 
-## Tokens: 5 collections, 330 variables
+## Tokens: 3 collections, 305 variables
 
 | Collection | Modes | Variables | What lives there |
 |---|---|---|---|
-| **Primitives** | Value | 78 | Raw colours (sand, plum, wine, ember, butter, ink, night, indigo, saffron, tomato, clay, peach, white) incl. exact alpha steps. Hidden from pickers (no scopes). |
-| **Zest · Natural** (semantic) | Default | 210 | Colour roles aliased to primitives: `ground/*`, `bloom/*`, `ink/*`, `onbloom/*`, `onphoto/*`, `surface/*`, `glass/*`, `action/*`, `accent/*`, `macro/*`, `line/*`, `scrim/*`, `fade/*`, `glow/*`, `ai/*`, `icon/*`, `system/*`, and `space/*` (2–72), `size/*` (controls, icons, tiles, ring, lens…), `radius/*`, `stroke/*`, `blur/*`, `opacity/*`, `shadow/*`. |
+| **Primitives** | Value | 71 | Raw colours (sand, plum, wine, ember, butter, ink, night, indigo, saffron, tomato, clay, peach, white) incl. exact alpha steps. Hidden from pickers (no scopes). |
+| **Zest · Natural** (semantic) | Default | 196 | Colour roles aliased to primitives: `ground/*`, `bloom/*`, `ink/*`, `onbloom/*`, `onphoto/*`, `surface/*`, `glass/*`, `action/*`, `accent/*`, `macro/*`, `line/*`, `scrim/*`, `fade/*`, `glow/*`, `ai/*`, `icon/*`, `system/*`, and `space/*` (2–72), `size/*` (controls, icons, tiles, ring, lens…), `radius/*`, `stroke/*`, `blur/*`, `opacity/*`, `shadow/*`. |
 | **Typography** | Value | 38 | `type/family`, `type/weight/*`, `type/size/*`, `type/line/*`, `type/tracking/*`. Every text style is bound to these. |
-| **Prototype · Day** | Before breakfast · Breakfast added · After · Dinner planned | 15 | The state of the day: kcal left, macros, bar rests, Zest's message, Budget card state, snackbar visibility. |
-| **Prototype · Recipe** | Original · Adjusted | 13 | Recipe detail before/after *Apply adjustment*. |
 
-Every variable has an explicit scope and WEB (`var(--…)`) + iOS code syntax. The five boolean
-prototype variables can't carry scopes: a Figma limitation.
+Every variable has an explicit scope and WEB (`var(--…)`) + iOS code syntax.
 
 **Styles.**
 - **16 text styles:** Head/XL·L·M, Text/Title·Body·S·Label·Caption·Action·Micro, Metric/XL·L·S, System/Status, Brand/Wordmark (+ L). Family, weight, size, line height and tracking are all bound to `type/*`.
@@ -39,11 +36,8 @@ prototype variables can't carry scopes: a Figma limitation.
 - **Component states:** interactive components carry their states as variants (Default, Pressed, Disabled, plus Selected / Loading / At minimum where they exist). They're wired as interactive components:
   - *While pressing → Pressed* on buttons, rows, chips, tabs and cards;
   - *On tap → Selected* on filter chips, radio, toggle and segments.
-- **App state:** lives in variable modes. The prototype switches them with *Set variable mode*:
-  - adding breakfast moves Today from *Before breakfast* to *Breakfast added*;
-  - *Undo* switches it back;
-  - *Plan for dinner* sets *Dinner planned*;
-  - *Apply adjustment* sets *Adjusted*.
+- **App state:** each screen carries one state. The alternatives (the day after a meal is
+  logged, the adjusted recipe) are separate exports in `03-screens/`.
 
   Bound to those modes:
   - texts;
