@@ -4,7 +4,7 @@
 |---|---|---|
 | `components.png` | 03 · Components | Overview: how tokens, components and state fit together, and an index of the family pages |
 | `foundations.png` | 02 · Foundations | Colour, the bloom, typography, spacing and radius, token architecture, sizes and strokes, effects |
-| `03.1-icons.png` | Icons | 39 Lucide icons as components (stroke and colour from variables) |
+| `03.1-icons.png` | Icons | 22 Lucide icons as components (stroke and colour from variables) |
 | `03.2-actions.png` | Actions | Button, Ghost button, Icon button, Chip, Shutter & Library, with every state |
 | `03.3-inputs-and-selection.png` | Inputs & selection | Toggle, Radio, Step indicator, Segmented control, Stepper, Search field, Composer |
 | `03.4-navigation.png` | Navigation | Status bar, Nav bar, Tab bar, Day / Week strip, Calendar day |
@@ -15,7 +15,7 @@
 The full reference is in [`docs/DESIGN-SYSTEM.md`](../docs/DESIGN-SYSTEM.md). The totals:
 - 305 variables in 3 collections (Primitives → semantic, Typography);
 - 16 text styles and 8 effect styles, all bound to variables;
-- 52 components (42 of them variant sets) plus 39 icons, each with its states.
+- 51 components (41 of them variant sets) plus 22 icons, each with its states.
 
 ## The rules worth knowing
 

@@ -23,7 +23,7 @@ Every variable has an explicit scope and WEB (`var(--…)`) + iOS code syntax.
 
 | Page | Components (variants) |
 |---|---|
-| Icons | 39 Lucide icons (ISC) on a 24 px grid; stroke `stroke/icon`, colour `icon/*`. Used through an instance-swap property everywhere. |
+| Icons | 22 Lucide icons (ISC) on a 24 px grid; stroke `stroke/icon`, colour `icon/*`. Used through an instance-swap property everywhere. |
 | Actions | **Button** (24: Primary/Secondary × Large/Medium/Small × Default/Pressed/Disabled/Loading) · **Ghost button** (18: Brand/Accent/Ink/Danger/On photo/Highlight × 3 states) · **Icon button** (26: Light/Tinted/Filled/Glass × Regular/Small × Default/Pressed/Selected/Disabled) · **Chip** (9: Filter/Suggestion × Selected × states) · **Capture control** (Shutter/Library × 3) |
 | Inputs & selection | Toggle (4) · Radio (4) · Step indicator (3) · Segment (6) + Segmented control (2) · Stepper (2) · **Search field** (5: Empty/Focused/Filled/Error/Disabled, leading + trailing icon) · Composer (3) |
 | Navigation | Status bar (2) · **Nav bar** (leading icon · title · trailing icon; On photo/On bloom) · Tab item (12) + **Tab bar** (5) · **Day** (4) + Week strip · **Calendar day** (5) |
