@@ -13,7 +13,7 @@ All links open without a Figma account: checked from a fresh browser with no Fig
 | **Story 1b: calories in a specific product** | [starts on Capture → Barcode / Type it](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=32-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
 | **Story 2: a recipe that fits me** | [starts on Recipes](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=53-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A2&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
 | Onboarding: first run | [starts on Welcome](https://www.figma.com/proto/dKRU4E7vOADUMMyp4EGRbG/project?node-id=48-63&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A63&page-id=27%3A5&show-proto-sidebar=1) | ✅ |
-| Video: the design system (English, 4:00) | [App Design System for Calorie AI (Loom)](https://www.loom.com/share/b3507a8c96614e0297ab3a12d0332c14) | ✅ Anyone with the link |
+| Video: the design system (English, 2:43) | [Design System Stylescape for Calorie App (Loom)](https://www.loom.com/share/a6437109253641f38e25c33bb083fa4b) | ✅ Anyone with the link |
 | Video: the product end to end (English, 3:54) | [AI Calorie Tracking App With Chat Agent (Loom)](https://www.loom.com/share/7d28108c8b0049c6ba8ed49dbc445bd8) | ✅ Anyone with the link |
 
 The prototype's flow list (left sidebar in Present mode) holds the three story flows, the
