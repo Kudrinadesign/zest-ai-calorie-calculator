@@ -218,7 +218,7 @@ Each case keeps the rules: fact first, no verdicts, one way forward, nothing los
 
   Every variable has a scope and code syntax.
 - **16 text styles and 8 effect styles,** all bound to variables.
-- **52 components with all their states** (42 of them variant sets), **and 39 icon components,** e.g.:
+- **51 components with all their states** (41 of them variant sets), **and 22 icon components,** e.g.:
   - Button, Ghost button, Icon button, Chip, Toggle, Radio, Segmented control;
   - Search field, Stepper, Composer;
   - Nav bar (leading / trailing icon), Tab bar, Day / Week strip, Calendar day;

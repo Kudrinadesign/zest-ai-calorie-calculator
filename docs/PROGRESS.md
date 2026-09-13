@@ -21,7 +21,7 @@ conversation.
 
 - **Design system built properly:** 305 variables in 3 collections (Primitives → semantic,
   Typography, two Prototype collections), 16 text styles and 8 effect styles bound to
-  variables, 52 components with Default / Pressed / Disabled / Selected / Loading states wired
+  variables, 51 components with Default / Pressed / Disabled / Selected / Loading states wired
   as interactive components.
 - **All screens rebuilt from instances**; the old Button / Chip / RoundControl / Badge / Nav
   sets were migrated and deleted.
